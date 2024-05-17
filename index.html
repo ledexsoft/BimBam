@@ -1,1474 +1,1648 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/manifest.json">
-    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
-    <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="assets/css/libs.bundle.css">
-    
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="assets/css/theme.bundle.css">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="../css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    
-    <!-- Map -->
-    <link rel="stylesheet" href="../mapbox-gl-js/v2.3.1/mapbox-gl.css">
-    
-    <!-- 
-      Color mode switch
-      - For demonstration purposes only
-      - If you do not have the possibility to store user preferences on the backend, I highly recommend switching to a media query implementation: https://getbootstrap.com/docs/5.3/customize/color-modes/#building-with-sass
-    -->
-    <script>
-      (() => {
-        window.addEventListener('DOMContentLoaded', () => {
-          const colorModeSwitch = document.getElementById('colorModeSwitch');
-          if (colorModeSwitch) {
-            colorModeSwitch.addEventListener('change', () => {
-              document.body.setAttribute('data-bs-theme', colorModeSwitch.checked ? 'dark' : 'light');
-            });
-          }
-        });
-      })();
-    </script>
-    
-    <!-- Title -->
-    <title>BimBam - Bar Discoteca en Cumanayagua</title>
-  </head>
-  <body>
-    
-
-    <!-- WELCOME -->
-    <header data-jarallax="" data-speed=".8" style="background-image: url(assets/img/102_538710643.jpg)">
-      <div class="d-flex flex-column min-vh-100 bg-black bg-opacity-50 pt-10 pt-md-8 pb-7 pb-md-0">
-        <div class="container my-auto">
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-8 col-lg-6 text-center">
-              <!-- Preheading -->
-              <h6 class="text-xs text-white text-opacity-75"><span class="text-primary">Bar</span> / Discoteca</h6>
-
-              <!-- Heading -->
-              <h1 class="display-1 text-white mb-4">BimBam</h1>
-
-              <!-- Subheading -->
-              <p class="text-center text-white text-opacity-75 mb-7">
-                Cumanayagua suena porque BimBam ya está aquí. BimBam te ofrece una experiencia única con deliciosos platos y un ambiente inigualable para disfrutar de buena música, cócteles y compañía.
-              </p>
-
-              <!-- Button -->
-              <a class="btn btn-outline-primary text-white text-primary-hover mb-7 mb-md-0" href="#reservation"> Reservar VIP </a>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md">
-              <!-- Social links -->
-              <ul class="list-inline text-center text-md-start mb-3 my-md-5">
-                <li class="list-inline-item">
-                  <a class="text-white text-opacity-75 text-primary-hover" href="#!">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item ms-5">
-                  <a class="text-white text-opacity-75 text-primary-hover" href="#!">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item ms-5">
-                  <a class="text-white text-opacity-75 text-primary-hover" href="#!">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md">
-              <!-- Address -->
-              <p class="font-serif text-white text-opacity-75 text-center text-md-end text-lg-end my-md-5">
-                <i class="fas fa-map-marker-alt text-primary me-3"></i> 1234 Cuatro esquinas. Calle Real, Cumanayagua, Cienfuegos
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- DISCOVER -->
-    <section class="pt-7 pt-md-9">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <!-- Divider -->
-            <hr class="hr-sm text-primary">
-
-            <!-- Text -->
-            <p class="fs-lg lh-lg text-body-emphasis mb-5 mb-md-0">Toma un descanso y disfruta de la música.</p>
-          </div>
-          <div class="col-md-4">
-            <!-- Media -->
-            <div class="media-decoration media-decoration-1 mb-5 mb-md-0">
-              <!-- Border -->
-              <div class="media-decoration-border" data-jarallax-element="-40"></div>
-
-              <!-- Image -->
-              <img class="media-decoration-img img-fluid" src="assets/img/Captura de pantalla 2024-05-05 163903.png" alt="...">
-            </div>
-          </div>
-          <div class="col-md-5 align-self-center mx-auto">
-            <!-- Heading -->
-            <h2 class="mb-2"><em>Reservado de mesas</em> en el 2do piso</h2>
-
-            <!-- Text -->
-            <p class="mb-0">
-              Vive una noche exclusiva en nuestro segundo piso. Reserva tu mesa y disfruta de un servicio personalizado y las mejores vistas del bar
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- DISCOVER -->
-    <section class="py-7 py-md-9">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2 order-md-2 align-self-end">
-            <!-- Divider -->
-            <hr class="hr-sm text-primary">
-
-            <!-- Text -->
-            <p class="fs-lg lh-lg text-body-emphasis mb-5 mb-md-0">“El alcohol es el peor enemigo del hombre, pero la biblia dice que ames a tu enemigo”</p>
-          </div>
-          <div class="col-md-4 order-md-3">
-            <!-- Media -->
-            <div class="media-decoration media-decoration-1 mb-5 mb-md-0">
-              <!-- Solid -->
-              <div class="media-decoration-solid" data-jarallax-element="-40"></div>
-
-              <!-- Border -->
-              <div class="media-decoration-border" data-jarallax-element="-40"></div>
-
-              <!-- Image -->
-              <img class="media-decoration-img img-fluid" src="assets/img/Captura de pantalla 2024-05-05 164616.png" alt="...">
-            </div>
-          </div>
-          <div class="col-md-5 order-md-1 align-self-center mx-auto">
-            <!-- Heading -->
-            <h2 class="mb-2"><em>Exelentes</em> servicios de coctelería</h2>
-
-            <!-- Text -->
-            <p class="mb-0">
-              Nuestros bartenders te sorprenderán con una amplia variedad de cócteles clásicos y de autor. Descubre tu nuevo trago favorito en BimBam. 
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section data-jarallax="" data-speed=".8" style="background-image: url(assets/img/102_538710645.jpg)">
-      <div class="min-vh-100 py-7 py-md-9 bg-gradient-bottom-end-white">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-              <!-- Divider -->
-              <hr class="hr-sm text-primary">
-
-              <!-- Text -->
-              <p class="fs-lg lh-lg text-black mb-0"><strong>Celebra tu cumpleaños, tu boda o evento especial que te gustaría llevarlo a lo grande. Te ofrecemos un servicio exclusivo con diferentes opciones para que tu día sea inolvidable.</strong></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MENU -->
-    <section class="py-7 py-md-9 border-bottom">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 col-lg-6 text-center">
-            <!-- Heading -->
-            <h2 class="mb-2">Nuestras opciones de menú</h2>
-
-            <!-- Subheading -->
-            <p class="mb-6">
-              Desde aperitivos como pizzas y hamburguesas, hasta lo tragos más codiciados en nuestra bara
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <!-- Navigation -->
-            <div class="nav justify-content-center mb-6" id="menuTabs" role="tablist">
-              <a class="nav-link active" id="mainsTab" data-bs-toggle="tab" href="#mains" role="tab" aria-controls="mains" aria-selected="true"> Principales </a>
-              <a class="nav-link" id="lunchTab" data-bs-toggle="tab" href="#lunch" role="tab" aria-controls="lunch"> Pizzas </a>
-              <a class="nav-link" id="dinnerTab" data-bs-toggle="tab" href="#dinner" role="tab" aria-controls="dinner"> Tragos </a>
-              <a class="nav-link" id="drinksTab" data-bs-toggle="tab" href="#drinks" role="tab" aria-controls="drinks"> Hamburguesas </a>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <!-- Content -->
-            <div class="tab-content" id="menuContent">
-              <div class="tab-pane fade show active" id="mains" role="tabpanel" aria-labelledby="mainsTab">
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/26.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Lorem ipsum dolor sit amet</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/27.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce id ante ut arcu</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/28.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce sed dolor eget tortor</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/29.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Lorem ipsum dolor sit amet</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/30.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce id ante ut arcu</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/31.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce sed dolor eget tortor</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunchTab">
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/27.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce id ante ut arcu</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/26.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Lorem ipsum dolor sit amet</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/29.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Lorem ipsum dolor sit amet</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/28.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce sed dolor eget tortor</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/31.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce sed dolor eget tortor</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/30.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce id ante ut arcu</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinnerTab">
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/28.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce sed dolor eget tortor</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/26.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Lorem ipsum dolor sit amet</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/29.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Lorem ipsum dolor sit amet</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/27.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce id ante ut arcu</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/30.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce id ante ut arcu</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/31.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce sed dolor eget tortor</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="drinksTab">
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/26.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Lorem ipsum dolor sit amet</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/30.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce id ante ut arcu</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/29.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Lorem ipsum dolor sit amet</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$15</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/27.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce id ante ut arcu</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$23</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/28.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce sed dolor eget tortor</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="py-3 border-bottom">
-                      <div class="row">
-                        <div class="col-3 align-self-center">
-                          <!-- Image -->
-                          <div class="ratio ratio-1x1">
-                            <img class="object-fit-cover" src="assets/img/31.jpg" alt="...">
-                          </div>
-                        </div>
-                        <div class="col-7">
-                          <!-- Heading -->
-                          <h5 class="mb-2">Fusce sed dolor eget tortor</h5>
-
-                          <!-- Text -->
-                          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, obcaecati! Sapiente laudantium.</p>
-                        </div>
-                        <div class="col-2">
-                          <!-- Price -->
-                          <div class="fs-4 font-serif text-center text-body-emphasis">$16</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- DISHES -->
-    <section class="py-7 py-md-9 overflow-hidden">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 col-lg-6 text-center">
-            <!-- Heading -->
-            <h2 class="mb-2">Nuestras <em>mejores</em> ofertas</h2>
-
-            <!-- Subheading -->
-            <p class="mb-6">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam aliquam id sint accusamus eius voluptatum explicabo quae similique, quas.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <!-- Slider -->
-            <div class="flickity-viewport-visible" data-flickity='{"cellAlign": "left", "contain": true, "imagesLoaded": true, "pageDots": false}'>
-              <div class="w-100 px-2" style="max-width: 320px">
-                <!-- Card -->
-                <div class="card border-0">
-                  <!-- Image -->
-                  <img class="card-img-top" src="assets/img/26.jpg" alt="...">
-
-                  <!-- Body -->
-                  <div class="card-body">
-                    <!-- Heading -->
-                    <div class="row mb-2">
-                      <div class="col">
-                        <h5 class="mb-0">Lorem ipsum dolor sit amet consectetur</h5>
-                      </div>
-                      <div class="col-auto">
-                        <span class="fs-4 font-serif text-body-emphasis">$15</span>
-                      </div>
-                    </div>
-
-                    <!-- Text -->
-                    <p class="mb-0">In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="w-100 px-2" style="max-width: 320px">
-                <!-- Card -->
-                <div class="card border-0">
-                  <!-- Image -->
-                  <img class="card-img-top" src="assets/img/27.jpg" alt="...">
-
-                  <!-- Body -->
-                  <div class="card-body">
-                    <!-- Heading -->
-                    <div class="row mb-2">
-                      <div class="col">
-                        <h5 class="mb-0">Lorem ipsum dolor sit amet consectetur</h5>
-                      </div>
-                      <div class="col-auto">
-                        <span class="fs-4 font-serif text-body-emphasis">$18</span>
-                      </div>
-                    </div>
-
-                    <!-- Text -->
-                    <p class="mb-0">In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="w-100 px-2" style="max-width: 320px">
-                <!-- Card -->
-                <div class="card border-0">
-                  <!-- Image -->
-                  <img class="card-img-top" src="assets/img/28.jpg" alt="...">
-
-                  <!-- Body -->
-                  <div class="card-body">
-                    <!-- Heading -->
-                    <div class="row mb-2">
-                      <div class="col">
-                        <h5 class="mb-0">Lorem ipsum dolor sit amet consectetur</h5>
-                      </div>
-                      <div class="col-auto">
-                        <span class="fs-4 font-serif text-body-emphasis">$23</span>
-                      </div>
-                    </div>
-
-                    <!-- Text -->
-                    <p class="mb-0">In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="w-100 px-2" style="max-width: 320px">
-                <!-- Card -->
-                <div class="card border-0">
-                  <!-- Image -->
-                  <img class="card-img-top" src="assets/img/29.jpg" alt="...">
-
-                  <!-- Body -->
-                  <div class="card-body">
-                    <!-- Heading -->
-                    <div class="row mb-2">
-                      <div class="col">
-                        <h5 class="mb-0">Lorem ipsum dolor sit amet consectetur</h5>
-                      </div>
-                      <div class="col-auto">
-                        <span class="fs-4 font-serif text-body-emphasis">$32</span>
-                      </div>
-                    </div>
-
-                    <!-- Text -->
-                    <p class="mb-0">In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="w-100 px-2" style="max-width: 320px">
-                <!-- Card -->
-                <div class="card border-0">
-                  <!-- Image -->
-                  <img class="card-img-top" src="assets/img/30.jpg" alt="...">
-
-                  <!-- Body -->
-                  <div class="card-body">
-                    <!-- Heading -->
-                    <div class="row mb-2">
-                      <div class="col">
-                        <h5 class="mb-0">Lorem ipsum dolor sit amet consectetur</h5>
-                      </div>
-                      <div class="col-auto">
-                        <span class="fs-4 font-serif text-body-emphasis">$15</span>
-                      </div>
-                    </div>
-
-                    <!-- Text -->
-                    <p class="mb-0">In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="w-100 px-2" style="max-width: 320px">
-                <!-- Card -->
-                <div class="card border-0">
-                  <!-- Image -->
-                  <img class="card-img-top" src="assets/img/31.jpg" alt="...">
-
-                  <!-- Body -->
-                  <div class="card-body">
-                    <!-- Heading -->
-                    <div class="row mb-2">
-                      <div class="col">
-                        <h5 class="mb-0">Lorem ipsum dolor sit amet consectetur</h5>
-                      </div>
-                      <div class="col-auto">
-                        <span class="fs-4 font-serif text-body-emphasis">$42</span>
-                      </div>
-                    </div>
-
-                    <!-- Text -->
-                    <p class="mb-0">In perspiciatis nisi dicta, aperiam magnam eaque laborum iste.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- RESERVATION -->
-    <section class="py-7 py-md-9 bg-light" id="reservation">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 col-lg-6 text-center">
-            <!-- Heading -->
-            <h2 class="mb-2">Reserva de manera online</h2>
-
-            <!-- Subheading -->
-            <p class="mb-6">Puedes reservar online desde este sitio o presencialmene desde la recepción del BimBam.</p>
-          </div>
-        </div>
-        <div class="row justify-content-lg-center">
-          <div class="col-lg-8">
-            <!-- Form -->
-            <form>
-              <div class="row gx-3">
-                <div class="col-md-6">
-                  <!-- Contact number (hidden) -->
-                  <input type="hidden" name="contact_number">
-
-                  <!-- Full name -->
-                  <div class="mb-3">
-                    <label class="visually-hidden" for="user_name">Nombre completo</label>
-                    <input class="form-control" id="user_name" name="user_name" type="text" placeholder="Nombre completo" required="">
-                  </div>
-
-                  <!-- Phone number -->
-                  <div class="mb-3">
-                    <label class="visually-hidden" for="user_phone">Teléfono</label>
-                    <input class="form-control" id="user_phone" name="user_phone" type="tel" placeholder="Teléfono" required="">
-                  </div>
-
-                  <!-- Email address -->
-                  <div class="mb-3">
-                    <label class="visually-hidden" for="user_email">Dirección de correo (Opcional)</label>
-                    <input class="form-control" id="user_email" name="user_email" type="email" placeholder="Dirección de correo (Opcional)" required="">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <!-- Guests -->
-                  <div class="mb-3">
-                    <label class="visually-hidden" for="guests">Guests</label>
-                    <select class="form-select" id="guests" name="guests" required="">
-                      <option value="1">1 person</option>
-                      <option value="2" selected="">2 persons</option>
-                      <option value="3">3 persons</option>
-                      <option value="4">4 persons</option>
-                      <option value="5">5 persons</option>
-                    </select>
-                  </div>
-
-                  <!-- Date -->
-                  <div class="mb-3">
-                    <label class="visually-hidden" for="date">Date</label>
-                    <input class="form-control" id="date" name="date" type="date" value="2021-02-12" required="">
-                  </div>
-
-                  <!-- Time -->
-                  <div class="mb-3">
-                    <label class="visually-hidden" for="time">Time</label>
-                    <input class="form-control" id="time" name="time" type="time" value="18:00" required="">
-                  </div>
-                </div>
-                <div class="col text-center">
-                  <!-- Button -->
-                  <button class="btn btn-outline-primary" type="submit">Reserva una mesa</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="py-7 py-md-9 border-bottom">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 col-lg-6 text-center">
-            <!-- Heading -->
-            <h2 class="mb-2">Testimonios</h2>
-
-            <!-- Subheading -->
-            <p class="mb-6">Qué dicen nuestros clientes</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <!-- Slider -->
-            <div data-flickity='{"imagesLoaded": true, "wrapAround": true}'>
-              <div class="w-100">
-                <div class="row align-items-center justify-content-center">
-                  <div class="col-8 col-md-3 order-md-1">
-                    <!-- Avatar -->
-                    <img class="img-fluid rounded-circle mb-5 mb-md-0" src="assets/img/20.jpg" alt="...">
-                  </div>
-                  <div class="col-md-7 order-md-0">
-                    <!-- Blockquote -->
-                    <figure class="mx-auto mb-0" style="max-width: 500px">
-                      <blockquote class="blockquote mb-0">
-                        <p class="font-serif text-body-emphasis mb-5">
-                          El cumpleaños de mi hija ha sido un momento en su vida que nunca olvidará, si quieres un servicio de calidad, no dudes en ir al BimBam.
-                        </p>
-                      </blockquote>
-                      <figcaption class="blockquote-footer text-xs mb-0">Carlos Javier</figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-              <div class="w-100">
-                <div class="row align-items-center justify-content-center">
-                  <div class="col-8 col-md-3 order-md-1">
-                    <!-- Avatar -->
-                    <img class="img-fluid rounded-circle mb-5 mb-md-0" src="assets/img/21.jpg" alt="...">
-                  </div>
-                  <div class="col-md-7 order-md-0">
-                    <!-- Blockquote -->
-                    <figure class="mx-auto mb-0" style="max-width: 500px">
-                      <blockquote class="blockquote mb-0">
-                        <p class="font-serif text-body-emphasis mb-5">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos at veritatis vitae modi ex quis quibusdam error repudiandae adipisci
-                          dolore perspiciatis iste, vel fuga a, libero architecto ratione deleniti sequi.
-                        </p>
-                      </blockquote>
-                      <figcaption class="blockquote-footer text-xs mb-0">Olivia Johnson</figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-              <div class="w-100">
-                <div class="row align-items-center justify-content-center">
-                  <div class="col-8 col-md-3 order-md-1">
-                    <!-- Avatar -->
-                    <img class="img-fluid rounded-circle mb-5 mb-md-0" src="assets/img/22.jpg" alt="...">
-                  </div>
-                  <div class="col-md-7 order-md-0">
-                    <!-- Blockquote -->
-                    <figure class="mx-auto mb-0" style="max-width: 500px">
-                      <blockquote class="blockquote mb-0">
-                        <p class="font-serif text-body-emphasis mb-5">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos at veritatis vitae modi ex quis quibusdam error repudiandae adipisci
-                          dolore perspiciatis iste, vel fuga a, libero architecto ratione deleniti sequi.
-                        </p>
-                      </blockquote>
-                      <figcaption class="blockquote-footer text-xs mb-0">Emma Williams</figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EVENTS -->
-    <section class="pt-7 pt-md-9">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 col-lg-6 text-center">
-            <!-- Heading -->
-            <h2 class="mb-2">Próximos eventos</h2>
-
-            <!-- Subheading -->
-            <p class="mb-6">No hay motivos para estar aburrido en Cumanayagua. Tenemos eventos preparados para tenerte de fiesta todo el mes.</p>
-          </div>
-        </div>
-      </div>
-      <div class="events">
-        <div class="event">
-          <div class="event-sm collapse">
-            <div class="container">
-              <div class="row align-items-center py-6">
-                <div class="col-3 col-md-2 col-lg-1">
-                  <!-- Date -->
-                  <time class="d-block text-center text-body-emphasis" datetime="2024-05-30">
-                    <span class="d-block mb-2 display-6 font-serif">30</span>
-                    <span>Mayo</span>
-                  </time>
-                </div>
-                <div class="col-9 col-md-7 col-lg-8">
-                  <!-- Heading -->
-                  <div class="h4 mb-4 mb-md-0" data-bs-toggle="collapse" data-bs-target="#eventOne" aria-controls="eventOne" role="button">
-                    Proximo concierto!
-                  </div>
-                </div>
-                <div class="col-9 offset-3 col-md-3 offset-md-0 text-md-right">
-                  <!-- Button -->
-                  <a class="btn btn-outline-primary" href="#section_reservation"> Reservar una mesa </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="event-lg collapse show bg-cover" id="eventOne" style="background-image: url(assets/img/maxresdefault.jpg)">
-            <div class="bg-black bg-opacity-50">
-              <div class="container">
-                <div class="row py-10">
-                  <div class="col-md-8 col-lg-5">
-                    <!-- Date -->
-                    <h3 class="text-xs text-primary">
-                      <time datetime="2017-09-30">Mayo 30, 2024</time>
-                    </h3>
-
-                    <!-- Heading -->
-                    <h2 class="mb-3 text-white">Proximo concierto el siguiente fin de semana con Deylon y El Nene</h2>
-
-                    <!-- Description -->
-                    <p class="mb-6 text-white text-opacity-75">
-                      Entrada de mujeres a mitad de precio. Una botella gratis a la la mesa ganadora de la rifa. 10 entradas gratis a la pareja ganadora de la competencia de vaile, y mucho más...
-                    </p>
-
-                    <!-- Button -->
-                    <a class="btn btn-outline-primary text-white text-primary-hover" href="#section_reservation"> Reservar una mesa </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-sm collapse show">
-            <div class="container border-top">
-              <div class="row align-items-center py-6">
-                <div class="col-3 col-md-2 col-lg-1">
-                  <!-- Date -->
-                  <time class="d-block text-center text-body-emphasis" datetime="2017-09-29">
-                    <span class="d-block mb-2 display-6 font-serif">3</span>
-                    <span>Junio</span>
-                  </time>
-                </div>
-                <div class="col-9 col-md-7 col-lg-8">
-                  <!-- Heading -->
-                  <div class="h4 mb-4 mb-md-0" data-bs-toggle="collapse" data-bs-target="#eventTwo" aria-controls="eventTwo" role="button">
-                    Noche de karaoke para sacar lo mejor de tu talento!
-                  </div>
-                </div>
-                <div class="col-9 offset-3 col-md-3 offset-md-0 text-md-right">
-                  <!-- Button -->
-                  <a class="btn btn-outline-primary" href="#section_reservation"> Reservar una mesa </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="event-lg collapse bg-cover" id="eventTwo" style="background-image: url(assets/img/9.jpg)">
-            <div class="bg-black bg-opacity-50">
-              <div class="container">
-                <div class="row py-10">
-                  <div class="col-md-8 col-lg-5">
-                    <!-- Date -->
-                    <h3 class="text-xs text-primary">
-                      <time datetime="2017-09-29">Junil 29, 2024</time>
-                    </h3>
-
-                    <!-- Heading -->
-                    <h2 class="mb-3 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptas, aut ea quae!</h2>
-
-                    <!-- Description -->
-                    <p class="mb-6 text-white text-opacity-75">
-                      Alias earum, labore doloremque iusto a modi et, dolorem veritatis iste quis ab. Facere est optio, voluptate molestias aspernatur impedit
-                      perferendis odit?
-                    </p>
-
-                    <!-- Button -->
-                    <a class="btn btn-outline-primary text-white text-primary-hover" href="#section_reservation"> Reservar una mesa </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-sm collapse show">
-            <div class="container border-top">
-              <div class="row align-items-center py-6">
-                <div class="col-3 col-md-2 col-lg-1">
-                  <!-- Date -->
-                  <time class="d-block text-center text-body-emphasis" datetime="2017-09-28">
-                    <span class="d-block mb-2 display-6 font-serif">8</span>
-                    <span>Junio</span>
-                  </time>
-                </div>
-                <div class="col-9 col-md-7 col-lg-8">
-                  <!-- Heading -->
-                  <div class="h4 mb-4 mb-md-0" data-bs-toggle="collapse" data-bs-target="#eventThree" aria-controls="eventThree" role="button">
-                    Dia de matiné para los más pequeños de la casa!
-                  </div>
-                </div>
-                <div class="col-9 offset-3 col-md-3 offset-md-0 text-md-right">
-                  <!-- Button -->
-                  <a class="btn btn-outline-primary" href="#section_reservation"> Reservar una mesa </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="event-lg collapse bg-cover" id="eventThree" style="background-image: url(assets/img/10.jpg)">
-            <div class="bg-black bg-opacity-50">
-              <div class="container">
-                <div class="row py-10">
-                  <div class="col-md-8 col-lg-5">
-                    <!-- Date -->
-                    <h3 class="text-xs text-primary">
-                      <time datetime="2017-09-28">Junio 8, 2024</time>
-                    </h3>
-
-                    <!-- Heading -->
-                    <h2 class="mb-3 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptas, aut ea quae!</h2>
-
-                    <!-- Description -->
-                    <p class="mb-6 text-white text-opacity-75">
-                      Alias earum, labore doloremque iusto a modi et, dolorem veritatis iste quis ab. Facere est optio, voluptate molestias aspernatur impedit
-                      perferendis odit?
-                    </p>
-
-                    <!-- Button -->
-                    <a class="btn btn-outline-primary text-white text-primary-hover" href="#section_reservation"> Reserva una mesa </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- NEWSLETTER -->
-    <section class="py-7 py-md-9 bg-light">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 col-lg-6 text-center">
-            <!-- Heading -->
-            <h2 class="mb-2">Subscríbete</h2>
-
-            <!-- Subheading -->
-            <p class="mb-6">Compartanos tu correo electrónico para estar al tanto de las próximas novedades y eventos</p>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <!-- Begin Mailchimp Signup Form -->
-            <div id="mc_embed_signup">
-              <form action="https://gmail.us6.list-manage.com/subscribe/post?u=c7b7808bb5a16b9f09c4e1fe0&amp;id=96b8442f9a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
-                <div class="row justify-content-center gx-3" id="mc_embed_signup_scroll">
-                  <div class="col">
-                    <label class="visually-hidden" for="mce-EMAIL">Dirección de correo </label>
-                    <input class="form-control" type="email" value="" name="EMAIL" id="mce-EMAIL">
-                  </div>
-                  <div class="visually-hidden" id="mce-responses">
-                    <div class="response" id="mce-error-response" style="display: none"></div>
-                    <div class="response" id="mce-success-response" style="display: none"></div>
-                  </div>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px" aria-hidden="true">
-                    <input type="text" name="b_c7b7808bb5a16b9f09c4e1fe0_96b8442f9a" tabindex="-1" value="">
-                  </div>
-                  <div class="col-auto">
-                    <input class="btn btn-outline-primary" type="submit" value="Subscribirse" name="subscribe" id="mc-embedded-subscribe">
-                  </div>
-                </div>
-              </form>
-            </div>
-            <!--End mc_embed_signup-->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section class="py-7 py-md-9">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 col-lg-6 text-center">
-            <!-- Heading -->
-            <h2 class="mb-2">Nuestra galería</h2>
-
-            <!-- Subheading -->
-            <p class="mb-6">Cada noche es un evento inolvidable en BimBam.</p>
-          </div>
-        </div>
-        <div class="row gx-3" data-isotope="">
-          <div class="col-6 col-sm-6 col-md-4">
-            <!-- Item -->
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "../v.png" }'>
-              <img class="img-fluid" src="assets/img/Captura de pantalla 2024-05-05 164355.png" alt="...">
-            </a>
-          </div>
-          <div class="col-6 col-sm-6 col-md-4">
-            <!-- Item -->
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "../v.png" }'>
-              <img class="img-fluid" src="assets/img/Captura de pantalla 2024-05-05 164812.png" alt="...">
-            </a>
-          </div>
-          <div class="col-6 col-sm-6 col-md-4">
-            <!-- Item -->
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/13.jpg" }'>
-              <img class="img-fluid" src="assets/img/Captura de pantalla 2024-05-05 164503.png" alt="...">
-            </a>
-          </div>
-          <div class="col-6 col-sm-6 col-md-4">
-            <!-- Item -->
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "../9.png" }'>
-              <img class="img-fluid" src="assets/img/disco.png" alt="...">
-            </a>
-          </div>
-          <div class="col-6 col-sm-6 col-md-4">
-            <!-- Item -->
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/14.jpg" }'>
-              <img class="img-fluid" src="assets/img/Captura de pantalla 2024-05-05 163903.png" alt="...">
-            </a>
-          </div>
-          <div class="col-6 col-sm-6 col-md-4">
-            <!-- Item -->
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/18.jpg" }'>
-              <img class="img-fluid" src="assets/img/Captura de pantalla 2024-05-05 164114.png" alt="...">
-            </a>
-          </div>
-          <div class="col-6 col-sm-6 col-md-4">
-            <!-- Item -->
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "../9.png" }'>
-              <img class="img-fluid" src="assets/img/9.png" alt="...">
-            </a>
-          </div>
-          <div class="col-6 col-sm-6 col-md-4">
-            <!-- Item -->
-            <a class="d-block mb-3" href="#" data-bigpicture='{ "imgSrc": "assets/img/12.jpg" }'>
-              <img class="img-fluid" src="assets/img/maxresdefault (1).jpg" alt="...">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MAP -->
-    <iframe class="w-100" style="height: 30rem" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14781.531915814208!2d-80.201754!3d22.1494893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f2b2f85eada5d33%3A0x55068bc3403b6c57!2sBIM%20BAM!5e0!3m2!1ses!2sus!4v1714955033749!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
-
-    <!-- FOOTER -->
-    <footer class="py-7 py-md-9 bg-black">
-      <div class="container px-4">
-        <div class="row gx-7">
-          <div class="col-sm-4">
-            <!-- Heading -->
-            <h5 class="text-xs text-primary">Sobre nosotros</h5>
-    
-            <!-- Text -->
-            <p class="mb-6">
-              “Tenemos un compromiso firme con el pueblo de Cumanayagua y es lograr un espacio donde las personas puedar ir a liberar su mente de las preocupaciones de día a día y hacer de BimBam su zona de confort”
-            </p>
-          </div>
-          <div class="col-sm-4">
-            <!-- Heading -->
-            <h5 class="text-xs text-primary">Contáctanos</h5>
-    
-            <!-- List -->
-            <ul class="list-unstyled mb-6">
-              <li class="d-flex mb-2">
-                <div class="fas fa-map-marker-alt me-3 mt-2 fs-sm"></div>
-                1234 Cuatro esquinas. Calle Real, Cumanayagua, Cienfuegos
-              </li>
-              <li class="d-flex mb-2">
-                <div class="fas fa-phone me-3 mt-2 fs-sm"></div>
-                +53 50972506
-              </li>
-              <li class="d-flex">
-                <div class="far fa-envelope me-3 mt-2 fs-sm"></div>
-                <a href="mailto:admin@bimbam.com">admin@bimbam.com</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-4">
-            <!-- Heading -->
-            <h5 class="text-xs text-primary">Horario de apertura</h5>
-    
-            <!-- Text -->
-            <div class="mb-3">
-              <div class="text-xs">Martes - Domingo</div>
-              <div class="font-serif">10:00 AM - 1:00 AM</div>
-            </div>
-    
-            <!-- Text -->
-            <div class="mb-6">
-              <div class="text-xs">Viernes - Sábado</div>
-              <div class="font-serif">9:00 AM - 03:00 AM</div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <!-- Copyright -->
-            <div class="d-flex align-items-center">
-              <hr class="hr-sm me-3" style="height: 1px">
-              &copy; 2024 BimBan. Todos los derechos reservados.
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- TOAST -->
-    <div class="toast position-fixed bottom-0 start-50 translate-middle-x mb-3 mb-md-5" id="notification" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body mx-auto"></div>
-      </div>
-    </div>
-
-    <!-- JAVASCRIPT -->
-    <!-- Vendor JS -->
-    <script src="assets/js/vendor.bundle.js"></script>
-    
-    <!-- Theme JS -->
-    <script src="assets/js/theme.bundle.js"></script>
-  </body>
+<head>
+	<title>BimBam - Centro recreativo en Cumanayagua</title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Ledexsoft">
+	<meta name="description" content="BimBam - Centro recreativo en Cumanayagua">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<!-- Dark mode -->
+	<script>
+		const storedTheme = localStorage.getItem('theme')
+ 
+		const getPreferredTheme = () => {
+			if (storedTheme) {
+				return storedTheme
+			}
+			return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+		}
+
+		const setTheme = function (theme) {
+			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.setAttribute('data-bs-theme', 'dark')
+			} else {
+				document.documentElement.setAttribute('data-bs-theme', theme)
+			}
+		}
+
+		setTheme(getPreferredTheme())
+
+		window.addEventListener('DOMContentLoaded', () => {
+		    var el = document.querySelector('.theme-icon-active');
+			if(el != 'undefined' && el != null) {
+				const showActiveTheme = theme => {
+				const activeThemeIcon = document.querySelector('.theme-icon-active use')
+				const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+				const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+
+				document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+					element.classList.remove('active')
+				})
+
+				btnToActive.classList.add('active')
+				activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+			}
+
+			window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+				if (storedTheme !== 'light' || storedTheme !== 'dark') {
+					setTheme(getPreferredTheme())
+				}
+			})
+
+			showActiveTheme(getPreferredTheme())
+
+			document.querySelectorAll('[data-bs-theme-value]')
+				.forEach(toggle => {
+					toggle.addEventListener('click', () => {
+						const theme = toggle.getAttribute('data-bs-theme-value')
+						localStorage.setItem('theme', theme)
+						setTheme(theme)
+						showActiveTheme(theme)
+					})
+				})
+
+			}
+		})
+		
+	</script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link rel="stylesheet" href="css2-2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/tiny-slider.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/choices/css/choices.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/flatpickr/css/flatpickr.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style-2.css">
+
+</head>
+
+<body>
+	<!-- Offcanvas menu START -->
+	<div class="offcanvas offcanvas-w-500px offcanvas-end" tabindex="-1" id="offcanvasBookstay" aria-labelledby="offcanvasBookstayLabel">
+		<div class="offcanvas-header border-bottom px-3">
+			<h5 class="offcanvas-title" id="offcanvasBookstayLabel">Book a Room</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body form-control-bg-light d-flex flex-column px-3">
+			<!-- Form START -->
+			<form>
+				<!-- Pickup -->
+				<div class="mb-3">
+					<label class="form-label mb-0">Room & Suite Type</label>
+					<select class="form-select js-choice" data-search-enabled="true" aria-label=".form-select-sm">
+						<option value="">Select location</option>
+						<option>Agave suite</option>
+						<option>Olive Grove Suite</option>
+						<option>Palm Suite</option>
+						<option>Casa Green Suite</option>
+					</select>
+				</div>
+
+				<!-- Date -->
+				<div class="mb-3">
+					<label class="form-label mb-0">Check in</label>
+					<input type="text" class="form-control flatpickr" data-date-format="d M Y" placeholder="Select date">
+				</div>
+				
+				<!-- Date -->
+				<div class="mb-3">
+					<label class="form-label mb-0">Check out</label>
+					<input type="text" class="form-control flatpickr" data-date-format="d M Y" placeholder="Select date">
+				</div>
+
+				<!-- Occupant -->
+				<div class="mb-3">
+					<!-- Dropdown input -->
+					<label class="form-label mb-0">Guests & rooms</label>
+					<div class="dropdown guest-selector me-2">
+						<input type="text" class="form-guest-selector form-control selection-result" value="2 Guests 1 Room" data-bs-auto-close="outside" data-bs-toggle="dropdown">
+					
+						<!-- dropdown items -->
+						<ul class="dropdown-menu guest-selector-dropdown">
+							<!-- Adult -->
+							<li class="d-flex justify-content-between">
+								<div>
+									<h6 class="mb-0">Adults</h6>
+									<small>Ages 13 or above</small>
+								</div>
+
+								<div class="hstack gap-1 align-items-center">
+									<button type="button" class="btn btn-link adult-remove p-0 mb-0"><i class="bi bi-dash-circle fs-5 fa-fw"></i></button>
+									<h6 class="guest-selector-count mb-0 adults">2</h6>
+									<button type="button" class="btn btn-link adult-add p-0 mb-0"><i class="bi bi-plus-circle fs-5 fa-fw"></i></button>
+								</div>
+							</li>
+
+							<!-- Divider -->
+							<li class="dropdown-divider"></li>
+
+							<!-- Child -->
+							<li class="d-flex justify-content-between">
+								<div>
+									<h6 class="mb-0">Child</h6>
+									<small>Ages 13 below</small>
+								</div>
+
+								<div class="hstack gap-1 align-items-center">
+									<button type="button" class="btn btn-link child-remove p-0 mb-0"><i class="bi bi-dash-circle fs-5 fa-fw"></i></button>
+									<h6 class="guest-selector-count mb-0 child">0</h6>
+									<button type="button" class="btn btn-link child-add p-0 mb-0"><i class="bi bi-plus-circle fs-5 fa-fw"></i></button>
+								</div>
+							</li>
+
+							<!-- Divider -->
+							<li class="dropdown-divider"></li>
+
+							<!-- Rooms -->
+							<li class="d-flex justify-content-between">
+								<div>
+									<h6 class="mb-0">Rooms</h6>
+									<small>Max room 8</small>
+								</div>
+
+								<div class="hstack gap-1 align-items-center">
+									<button type="button" class="btn btn-link room-remove p-0 mb-0"><i class="bi bi-dash-circle fs-5 fa-fw"></i></button>
+									<h6 class="guest-selector-count mb-0 rooms">1</h6>
+									<button type="button" class="btn btn-link room-add p-0 mb-0"><i class="bi bi-plus-circle fs-5 fa-fw"></i></button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Buttons -->
+				<div class="text-center">
+					<button class="btn btn-primary-soft w-100 mb-0">Check Availability</button>
+				</div>
+			</form>
+			<!-- Form END -->
+
+			<!-- List -->
+			<div class="bg-light p-3 rounded mt-auto">
+				<h6>Why Book Direct?</h6>
+				<ul class="small ps-3">
+					<li class="mb-2">10% discount is applied</li>
+					<li class="mb-2">15% off on spa treatment</li>
+					<li class="mb-2">Best price guaranteed</li>
+					<li class="mb-2">Daily complimentary sunrise yoga</li>
+					<li class="mb-2">Early check-in and late check-out</li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+	<!-- Offcanvas menu END -->
+
+<!-- Header START -->
+<header class="header-transparent">
+	<!-- Logo Nav START -->
+	<nav class="navbar navbar-dark navbar-expand-xl">
+		<div class="container-fluid px-md-5">
+			<!-- Logo START -->
+			<a class="navbar-brand" href="index.html">
+				<img class="navbar-brand-item" src="assets/images/311521385_101019562802721_1833123397350662529_n copia.png" alt="logo">
+			</a>
+			<!-- Logo END -->
+
+      <!-- Responsive navbar toggler -->
+			<button class="navbar-toggler ms-auto me-3 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-animation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</button>
+
+			<!-- Main navbar START -->
+			<div class="navbar-collapse collapse" id="navbarCollapse">
+				<ul class="navbar-nav navbar-nav-scroll mx-auto">
+
+					<!-- Nav item Link -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="listingMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Listings</a>
+						<ul class="dropdown-menu" aria-labelledby="listingMenu">
+							<!-- Dropdown submenu -->
+							<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#">Hotel</a>
+								<ul class="dropdown-menu" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="index.html">Hotel Home</a></li>
+									<li> <a class="dropdown-item" href="index-hotel-chain.html">Hotel Chain</a></li>
+									<li> <a class="dropdown-item" href="index-resort.html">Hotel Resort</a></li>
+									<li> <a class="dropdown-item" href="hotel-grid.html">Hotel Grid</a></li>
+									<li> <a class="dropdown-item" href="hotel-list.html">Hotel List</a></li>
+									<li> <a class="dropdown-item" href="hotel-detail.html">Hotel Detail</a></li>
+									<li> <a class="dropdown-item" href="room-detail.html">Room Detail</a></li>
+									<li> <a class="dropdown-item" href="hotel-booking.html">Hotel Booking</a></li>
+								</ul>
+							</li>
+
+							<!-- Dropdown submenu -->
+							<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#">Flight</a>
+								<ul class="dropdown-menu" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="index-flight.html">Flight Home</a></li>
+									<li> <a class="dropdown-item" href="flight-list.html">Flight List</a></li>
+									<li> <a class="dropdown-item" href="flight-detail.html">Flight Detail</a></li>
+									<li> <a class="dropdown-item" href="flight-booking.html">Flight Booking</a></li>
+								</ul>
+							</li>
+
+							<!-- Dropdown submenu -->
+							<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#">Tour</a>
+								<ul class="dropdown-menu" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="index-tour.html">Tour Home</a></li>
+									<li> <a class="dropdown-item" href="tour-grid.html">Tour Grid</a></li>
+									<li> <a class="dropdown-item" href="tour-detail.html">Tour Detail</a></li>
+									<li> <a class="dropdown-item" href="tour-booking.html">Tour Booking</a></li>
+								</ul>
+							</li>
+
+							<!-- Dropdown submenu -->
+							<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#">Cab</a>
+								<ul class="dropdown-menu" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="index-cab.html">Cab Home</a></li>
+									<li> <a class="dropdown-item" href="cab-list.html">Cab List</a></li>
+									<li> <a class="dropdown-item" href="cab-detail.html">Cab Detail</a></li>
+									<li> <a class="dropdown-item" href="cab-booking.html">Cab Booking</a></li>
+								</ul>
+							</li>
+
+							<!-- Dropdown submenu -->
+							<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#">Directory</a>
+								<ul class="dropdown-menu" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="index-directory.html">Directory Home</a></li>
+									<li> <a class="dropdown-item" href="directory-detail.html">Directory Detail</a></li>
+								</ul>
+							</li>
+
+							<!-- Dropdown submenu -->
+							<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#">Add Listing</a>
+								<ul class="dropdown-menu" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="join-us.html">Join us</a></li>
+									<li> <a class="dropdown-item" href="add-listing.html">Add Listing</a></li>
+									<li> <a class="dropdown-item" href="add-listing-minimal.html">Add Listing Minimal</a></li>
+									<li> <a class="dropdown-item" href="listing-added.html">Listing Added</a></li>
+								</ul>
+							</li>
+
+              <!-- Dropdown submenu -->
+							<li class="dropdown-submenu dropend">
+								<a class="dropdown-item dropdown-toggle" href="#">Hero</a>
+								<ul class="dropdown-menu" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="hero-inline-form.html">Hero Inline Form</a></li>
+									<li> <a class="dropdown-item" href="hero-multiple-search.html">Hero Multiple Search</a></li>
+									<li> <a class="dropdown-item" href="hero-image-gallery.html">Hero Image Gallery</a></li>
+									<li> <a class="dropdown-item" href="hero-split.html">Hero Split</a></li>
+								</ul>
+							</li>
+
+							<li> <a class="dropdown-item" href="booking-confirm.html">Booking Confirmed</a></li>
+							<li> <a class="dropdown-item" href="compare-listing.html">Compare Listing</a></li>
+							<li> <a class="dropdown-item" href="offer-detail.html">Offer Detail</a></li>
+						</ul>
+					</li>
+
+					<!-- Nav item Link -->
+					<li class="nav-item"> <a class="nav-link" href="#">Our Story</a> </li>
+
+					<!-- Nav item Link -->
+					<li class="nav-item"> <a class="nav-link" href="#">Experience</a> </li>
+
+					<!-- Nav item Link -->
+					<li class="nav-item"> <a class="nav-link" href="contáctanos.html">Contáctanos</a> </li>
+
+					<!-- Nav item Link -->
+					<li class="nav-item"> <a class="nav-link" href="#">Ofertas</a> </li>
+
+					<!-- Nav item Link -->
+					<li class="nav-item"> <a class="nav-link" href="galería.html">Galería</a> </li>
+				</ul>
+			</div>
+			<!-- Main navbar END -->
+
+			<!-- Book button -->
+			<div class="nav flex-row ms-xl-auto">
+				<button class="btn btn-sm btn-primary mb-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBookstay" aria-controls="offcanvasBookstay"><i class="bi bi-calendar-week me-2"></i>Book a Stay</button>
+			</div>
+
+		</div>
+	</nav>
+	<!-- Logo Nav END -->
+</header>
+<!-- Header END -->
+<!-- Navbar mobile START -->
+<div class="navbar navbar-mobile">
+	<ul class="navbar-nav">
+		<!-- Nav item Home -->
+		<li class="nav-item">
+			<a class="nav-link active" href="#"><i class="bi bi-house-door fa-fw"></i>
+				<span class="mb-0 nav-text">Inicio</span>
+			</a>	
+		</li>
+
+		<!-- Nav item My Trips -->
+		<li class="nav-item"> 
+			<a class="nav-link" href="#"><i class="bi bi-briefcase fa-fw"></i>
+				<span class="mb-0 nav-text">Servicios</span>
+			</a>	
+		</li>
+
+		<!-- Nav item Offer -->
+		<li class="nav-item"> 
+			<a class="nav-link" href="hotel-grid.html"><i class="bi bi-percent fa-fw"></i>
+				<span class="mb-0 nav-text">Ofertas</span> 
+			</a>
+		</li>
+
+		<!-- Nav item Account -->
+		<li class="nav-item"> 
+			<a class="nav-link" href="#"><i class="bi bi-person-circle fa-fw"></i>
+				<span class="mb-0 nav-text">Cuenta</span>
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- Navbar mobile END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+
+<!-- =======================
+Main banner START -->
+<section class="position-relative py-6 py-sm-9" style="background-image:url(assets/images/maxresdefault.jpg); background-position: center left; background-size: cover;">
+	<!-- Background dark overlay -->
+	<div class="bg-overlay bg-dark opacity-2"></div>
+	<div class="container z-index-9 position-relative">
+		<div class="row">
+			<div class="col-xl-8 m-auto text-center py-xl-8">
+				<h1 class="display-4 text-white mb-3">Centro recreativo en Cumanayagua</h1>
+				<h5 class="text-white mb-3">tu mejor opción para disfrutar de la buena música y pasar un momento agradable en compañía
+				</h5>
+				<a href="#" class="btn btn-lg btn-dark mb-0">Conocer servicios</a>
+			</div>
+		</div> <!-- Row END -->
+	</div>
+</section>
+<!-- =======================
+Main banner END -->
+
+<!-- =======================
+About START -->
+<section class="pt-5 pt-md-8 pb-0">
+	<div class="container z-index-9">
+		<div class="row">
+			<div class="col-lg-10 m-auto text-center">
+				<h2>Here is a tribute to good life!</h2>
+				<p class="lead">Size-like body someone had. Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effects wish change way and any wanted. Lively use looked latter regard had. Do he it part more last in. We understand that theory is important to build a solid foundation, we understand that theory alone isn't going to get the job done so that's why this is packed with practical hands-on examples that you can follow step by step.</p>
+				
+				<!-- List -->
+				<ul class="list-inline hstack gap-4 flex-wrap justify-content-center mt-4">
+					<li class="list-inline-item">
+						<h5 class="mb-0 fw-normal"><i class="bi bi-star fa-fw text-warning me-1"></i>Have High Rating</h5>
+					</li>
+					<li class="list-inline-item"> 
+						<h5 class="mb-0 fw-normal"><i class="bi bi-pin-map fa-fw text-primary me-1"></i>Best Locations</h5>
+					</li>
+					<li class="list-inline-item">
+						<h5 class="mb-0 fw-normal"><i class="bi bi-x-octagon fa-fw text-danger me-1"></i>Free Cancellation</h5>
+					</li>	
+					<li class="list-inline-item"> 
+						<h5 class="mb-0 fw-normal"><i class="bi bi-wallet fa-fw text-success me-1"></i>Payment Options</h5>
+					</li>
+				</ul>
+
+				<!-- Button and rating -->
+				<div class="d-sm-flex justify-content-center align-items-center mt-4">
+					<!-- Rating -->
+					<div class="d-flex justify-content-center align-items-center text-start me-0 me-sm-4">
+						<h3 class="me-2 mb-0">4.5</h3>
+						<div>
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
+								<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
+								<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
+								<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
+								<li class="list-inline-item me-0 small"><i class="fas fa-star-half-alt text-warning"></i></li>
+							</ul>
+							<p class="mb-0 small">Clients Love Us!</p>
+						</div>
+					</div>
+					<!-- Button -->
+					<div> <a href="#" class="btn btn-lg btn-dark mb-0">Explore now</a> </div>
+				</div>
+			</div>
+		</div> <!-- Row END -->
+	</div>
+</section>
+<!-- =======================
+About END -->
+
+<!-- =======================
+Experience START -->
+<section class="pt-5 pt-md-8 pb-0">
+	<div class="container-fluid px-lg-5">
+		<!-- Title -->
+		<div class="row mb-4">
+			<div class="col-12 text-center">
+				<h2>Nuestras mejores ofertas</h2>
+			</div>
+		</div>
+
+		<!-- Slider START -->
+		<div class="tiny-slider arrow-round arrow-blur rounded-3 overflow-hidden pb-6">
+			<div class="tiny-slider-inner" data-autoplay="true" data-arrow="true" data-dots="false" data-items-xl="4" data-items-lg="3" data-items-md="2" data-items-xs="1">
+					<!-- Card item START -->
+					<div>
+						<div class="card card-metro overflow-hidden">
+							<img src="assets/images/category/hotel/resort/3by4/01.jpg" alt="">
+							<!-- Image overlay -->
+							<div class="card-img-overlay d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h4><a href="#" class="text-white stretched-link">Spa & Wellness</a></h4>
+									<p class="text-white mb-2">We focus a great deal on the understanding of behavioral psychology and influence</p>
+									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+
+					<!-- Card item START -->
+					<div>
+						<div class="card card-metro overflow-hidden">
+							<img src="assets/images/category/hotel/resort/3by4/02.jpg" alt="">
+							<!-- Image overlay -->
+							<div class="card-img-overlay d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h4><a href="#" class="text-white stretched-link">Wedding & Romance</a></h4>
+									<p class="text-white mb-2">Understand that theory alone isn't going to get the job done.</p>
+									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+
+					<!-- Card item START -->
+					<div>
+						<div class="card card-metro overflow-hidden">
+							<img src="assets/images/category/hotel/resort/3by4/03.jpg" alt="">
+							<!-- Image overlay -->
+							<div class="card-img-overlay d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h4><a href="#" class="text-white stretched-link">Activities</a></h4>
+									<p class="text-white mb-2">Tolerably behavior may admit daughters offending effect wishes change way and any wanted.</p>
+									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+
+					<!-- Card item START -->
+					<div>
+						<div class="card card-metro overflow-hidden">
+							<img src="assets/images/category/hotel/resort/3by4/04.jpg" alt="">
+							<!-- Image overlay -->
+							<div class="card-img-overlay d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h4><a href="#" class="text-white stretched-link">Event Calendar</a></h4>
+									<p class="text-white mb-2">Praise effect wishes change way and any wanted behavioral psychology and influence</p>
+									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+
+					<!-- Card item START -->
+					<div>
+						<div class="card card-metro overflow-hidden">
+							<img src="assets/images/category/hotel/resort/3by4/05.jpg" alt="">
+							<!-- Image overlay -->
+							<div class="card-img-overlay d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h4><a href="#" class="text-white stretched-link">Dining</a></h4>
+									<p class="text-white mb-2">Focus a great deal on the understanding of behavioral psychology and influence</p>
+									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+
+					<!-- Card item START -->
+					<div>
+						<div class="card card-metro overflow-hidden">
+							<img src="assets/images/category/hotel/resort/3by4/06.jpg" alt="">
+							<!-- Image overlay -->
+							<div class="card-img-overlay d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h4><a href="#" class="text-white stretched-link">Fitness Center</a></h4>
+									<p class="text-white mb-2">Praise effect wishes change way and any wanted.</p>
+									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+
+					<!-- Card item START -->
+					<div>
+						<div class="card card-metro overflow-hidden">
+							<img src="assets/images/category/hotel/resort/3by4/07.jpg" alt="">
+							<!-- Image overlay -->
+							<div class="card-img-overlay d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h4><a href="#" class="text-white stretched-link">Shop</a></h4>
+									<p class="text-white mb-2">Do he it part more last in. We understand that theory is important</p>
+									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+			</div>	
+		</div>
+	</div>
+</section>
+<!-- =======================
+Experience END -->
+<!-- =======================
+Action box START -->
+<section class="my-md-5" style="background-image:url(assets/images/about/11.jpg); background-position: center left; background-size: cover;">
+	<div class="container">
+		<div class="row py-lg-7">
+			<div class="col-lg-6 ms-auto">
+				<h5 class="badge text-bg-white mb-3"><i class="bi bi-star-fill text-warning me-2"></i>Featured</h5>
+				<h2 class="mb-4 text-white">Celebra tu próximo
+					<span class="position-relative z-index-9">Evento especial
+						<!-- SVG START -->
+						<span class="position-absolute top-50 start-50 translate-middle z-index-n1 d-none d-md-block mt-3">
+							<svg width="300px" height="21.5px" viewbox="0 0 445.5 21.5">
+								<path class="fill-success" d="M409.9,2.6c-9.7-0.6-19.5-1-29.2-1.5c-3.2-0.2-6.4-0.2-9.7-0.3c-7-0.2-14-0.4-20.9-0.5 c-3.9-0.1-7.8-0.2-11.7-0.3c-1.1,0-2.3,0-3.4,0c-2.5,0-5.1,0-7.6,0c-11.5,0-23,0-34.5,0c-2.7,0-5.5,0.1-8.2,0.1 c-6.8,0.1-13.6,0.2-20.3,0.3c-7.7,0.1-15.3,0.1-23,0.3c-12.4,0.3-24.8,0.6-37.1,0.9c-7.2,0.2-14.3,0.3-21.5,0.6 c-12.3,0.5-24.7,1-37,1.5c-6.7,0.3-13.5,0.5-20.2,0.9C112.7,5.3,99.9,6,87.1,6.7C80.3,7.1,73.5,7.4,66.7,8 C54,9.1,41.3,10.1,28.5,11.2c-2.7,0.2-5.5,0.5-8.2,0.7c-5.5,0.5-11,1.2-16.4,1.8c-0.3,0-0.7,0.1-1,0.1c-0.7,0.2-1.2,0.5-1.7,1 C0.4,15.6,0,16.6,0,17.6c0,1,0.4,2,1.1,2.7c0.7,0.7,1.8,1.2,2.7,1.1c6.6-0.7,13.2-1.5,19.8-2.1c6.1-0.5,12.3-1,18.4-1.6 c6.7-0.6,13.4-1.1,20.1-1.7c2.7-0.2,5.4-0.5,8.1-0.7c10.4-0.6,20.9-1.1,31.3-1.7c6.5-0.4,13-0.7,19.5-1.1c2.7-0.1,5.4-0.3,8.1-0.4 c10.3-0.4,20.7-0.8,31-1.2c6.3-0.2,12.5-0.5,18.8-0.7c2.1-0.1,4.2-0.2,6.3-0.2c11.2-0.3,22.3-0.5,33.5-0.8 c6.2-0.1,12.5-0.3,18.7-0.4c2.2-0.1,4.4-0.1,6.7-0.1c11.5-0.1,23-0.2,34.6-0.4c7.2-0.1,14.4-0.1,21.6-0.1c12.2,0,24.5,0.1,36.7,0.1 c2.4,0,4.8,0.1,7.2,0.2c6.8,0.2,13.5,0.4,20.3,0.6c5.1,0.2,10.1,0.3,15.2,0.4c3.6,0.1,7.2,0.4,10.8,0.6c10.6,0.6,21.1,1.2,31.7,1.8 c2.7,0.2,5.4,0.4,8,0.6c2.9,0.2,5.8,0.4,8.6,0.7c0.4,0.1,0.9,0.2,1.3,0.3c1.1,0.2,2.2,0.2,3.2-0.4c0.9-0.5,1.6-1.5,1.9-2.5 c0.6-2.2-0.7-4.5-2.9-5.2c-1.9-0.5-3.9-0.7-5.9-0.9c-1.4-0.1-2.7-0.3-4.1-0.4c-2.6-0.3-5.2-0.4-7.9-0.6 C419.7,3.1,414.8,2.9,409.9,2.6z"></path>
+							</svg>
+						</span>
+						<!-- SVG END -->
+					</span>
+				</h2>
+				<p class="text-white mb-4">Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do. Water timed folly right aware if oh truth. Large above be to means. Dashwood does provide stronger is.</p>
+				<a href="#" class="btn btn-primary mb-0">Check Listing</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+Action box END -->
+<!-- =======================
+About START -->
+<section class="pb-0 pb-xl-5">
+	<div class="container">
+		<div class="row g-4 justify-content-between align-items-center">
+			<!-- Left side START -->
+			<div class="col-lg-5 position-relative">
+				<!-- Svg Decoration -->
+				<figure class="position-absolute top-0 start-0 translate-middle z-index-1 ms-4">
+					<svg class="fill-warning" width="77px" height="77px">
+						<path d="M76.997,41.258 L45.173,41.258 L67.676,63.760 L63.763,67.673 L41.261,45.171 L41.261,76.994 L35.728,76.994 L35.728,45.171 L13.226,67.673 L9.313,63.760 L31.816,41.258 L-0.007,41.258 L-0.007,35.725 L31.816,35.725 L9.313,13.223 L13.226,9.311 L35.728,31.813 L35.728,-0.010 L41.261,-0.010 L41.261,31.813 L63.763,9.311 L67.676,13.223 L45.174,35.725 L76.997,35.725 L76.997,41.258 Z"></path>
+					</svg>
+				</figure>
+
+				<!-- Svg decoration -->
+				<figure class="position-absolute bottom-0 end-0 d-none d-md-block mb-n5 me-n4">
+					<svg height="400" class="fill-primary opacity-2" viewbox="0 0 340 340">
+						<circle cx="194.2" cy="2.2" r="2.2"></circle>
+						<circle cx="2.2" cy="2.2" r="2.2"></circle>
+						<circle cx="218.2" cy="2.2" r="2.2"></circle>
+						<circle cx="26.2" cy="2.2" r="2.2"></circle>
+						<circle cx="242.2" cy="2.2" r="2.2"></circle>
+						<circle cx="50.2" cy="2.2" r="2.2"></circle>
+						<circle cx="266.2" cy="2.2" r="2.2"></circle>
+						<circle cx="74.2" cy="2.2" r="2.2"></circle>
+						<circle cx="290.2" cy="2.2" r="2.2"></circle>
+						<circle cx="98.2" cy="2.2" r="2.2"></circle>
+						<circle cx="314.2" cy="2.2" r="2.2"></circle>
+						<circle cx="122.2" cy="2.2" r="2.2"></circle>
+						<circle cx="338.2" cy="2.2" r="2.2"></circle>
+						<circle cx="146.2" cy="2.2" r="2.2"></circle>
+						<circle cx="170.2" cy="2.2" r="2.2"></circle>
+						<circle cx="194.2" cy="26.2" r="2.2"></circle>
+						<circle cx="2.2" cy="26.2" r="2.2"></circle>
+						<circle cx="218.2" cy="26.2" r="2.2"></circle>
+						<circle cx="26.2" cy="26.2" r="2.2"></circle>
+						<circle cx="242.2" cy="26.2" r="2.2"></circle>
+						<circle cx="50.2" cy="26.2" r="2.2"></circle>
+						<circle cx="266.2" cy="26.2" r="2.2"></circle>
+						<circle cx="74.2" cy="26.2" r="2.2"></circle>
+						<circle cx="290.2" cy="26.2" r="2.2"></circle>
+						<circle cx="98.2" cy="26.2" r="2.2"></circle>
+						<circle cx="314.2" cy="26.2" r="2.2"></circle>
+						<circle cx="122.2" cy="26.2" r="2.2"></circle>
+						<circle cx="338.2" cy="26.2" r="2.2"></circle>
+						<circle cx="146.2" cy="26.2" r="2.2"></circle>
+						<circle cx="170.2" cy="26.2" r="2.2"></circle>
+						<circle cx="194.2" cy="50.2" r="2.2"></circle>
+						<circle cx="2.2" cy="50.2" r="2.2"></circle>
+						<circle cx="218.2" cy="50.2" r="2.2"></circle>
+						<circle cx="26.2" cy="50.2" r="2.2"></circle>
+						<circle cx="242.2" cy="50.2" r="2.2"></circle>
+						<circle cx="50.2" cy="50.2" r="2.2"></circle>
+						<circle cx="266.2" cy="50.2" r="2.2"></circle>
+						<circle cx="74.2" cy="50.2" r="2.2"></circle>
+						<circle cx="290.2" cy="50.2" r="2.2"></circle>
+						<circle cx="98.2" cy="50.2" r="2.2"></circle>
+						<circle cx="314.2" cy="50.2" r="2.2"></circle>
+						<circle cx="122.2" cy="50.2" r="2.2"></circle>
+						<circle cx="338.2" cy="50.2" r="2.2"></circle>
+						<circle cx="146.2" cy="50.2" r="2.2"></circle>
+						<circle cx="170.2" cy="50.2" r="2.2"></circle>
+						<circle cx="194.2" cy="74.2" r="2.2"></circle>
+						<circle cx="2.2" cy="74.2" r="2.2"></circle>
+						<circle cx="218.2" cy="74.2" r="2.2"></circle>
+						<circle cx="26.2" cy="74.2" r="2.2"></circle>
+						<circle cx="242.2" cy="74.2" r="2.2"></circle>
+						<circle cx="50.2" cy="74.2" r="2.2"></circle>
+						<circle cx="266.2" cy="74.2" r="2.2"></circle>
+						<circle cx="74.2" cy="74.2" r="2.2"></circle>
+						<circle cx="290.2" cy="74.2" r="2.2"></circle>
+						<circle cx="98.2" cy="74.2" r="2.2"></circle>
+						<circle cx="314.2" cy="74.2" r="2.2"></circle>
+						<circle cx="122.2" cy="74.2" r="2.2"></circle>
+						<circle cx="338.2" cy="74.2" r="2.2"></circle>
+						<circle cx="146.2" cy="74.2" r="2.2"></circle>
+						<circle cx="170.2" cy="74.2" r="2.2"></circle>
+						<circle cx="194.2" cy="98.2" r="2.2"></circle>
+						<circle cx="2.2" cy="98.2" r="2.2"></circle>
+						<circle cx="218.2" cy="98.2" r="2.2"></circle>
+						<circle cx="26.2" cy="98.2" r="2.2"></circle>
+						<circle cx="242.2" cy="98.2" r="2.2"></circle>
+						<circle cx="50.2" cy="98.2" r="2.2"></circle>
+						<circle cx="266.2" cy="98.2" r="2.2"></circle>
+						<circle cx="74.2" cy="98.2" r="2.2"></circle>
+						<circle cx="290.2" cy="98.2" r="2.2"></circle>
+						<circle cx="98.2" cy="98.2" r="2.2"></circle>
+						<circle cx="314.2" cy="98.2" r="2.2"></circle>
+						<circle cx="122.2" cy="98.2" r="2.2"></circle>
+						<circle cx="338.2" cy="98.2" r="2.2"></circle>
+						<circle cx="146.2" cy="98.2" r="2.2"></circle>
+						<circle cx="170.2" cy="98.2" r="2.2"></circle>
+						<circle cx="194.2" cy="122.2" r="2.2"></circle>
+						<circle cx="2.2" cy="122.2" r="2.2"></circle>
+						<circle cx="218.2" cy="122.2" r="2.2"></circle>
+						<circle cx="26.2" cy="122.2" r="2.2"></circle>
+						<circle cx="242.2" cy="122.2" r="2.2"></circle>
+						<circle cx="50.2" cy="122.2" r="2.2"></circle>
+						<circle cx="266.2" cy="122.2" r="2.2"></circle>
+						<circle cx="74.2" cy="122.2" r="2.2"></circle>
+						<circle cx="290.2" cy="122.2" r="2.2"></circle>
+						<circle cx="98.2" cy="122.2" r="2.2"></circle>
+						<circle cx="314.2" cy="122.2" r="2.2"></circle>
+						<circle cx="122.2" cy="122.2" r="2.2"></circle>
+						<circle cx="338.2" cy="122.2" r="2.2"></circle>
+						<circle cx="146.2" cy="122.2" r="2.2"></circle>
+						<circle cx="170.2" cy="122.2" r="2.2"></circle>
+						<circle cx="194.2" cy="146.2" r="2.2"></circle>
+						<circle cx="2.2" cy="146.2" r="2.2"></circle>
+						<circle cx="218.2" cy="146.2" r="2.2"></circle>
+						<circle cx="26.2" cy="146.2" r="2.2"></circle>
+						<circle cx="242.2" cy="146.2" r="2.2"></circle>
+						<circle cx="50.2" cy="146.2" r="2.2"></circle>
+						<circle cx="266.2" cy="146.2" r="2.2"></circle>
+						<circle cx="74.2" cy="146.2" r="2.2"></circle>
+						<circle cx="290.2" cy="146.2" r="2.2"></circle>
+						<circle cx="98.2" cy="146.2" r="2.2"></circle>
+						<circle cx="314.2" cy="146.2" r="2.2"></circle>
+						<circle cx="122.2" cy="146.2" r="2.2"></circle>
+						<circle cx="338.2" cy="146.2" r="2.2"></circle>
+						<circle cx="146.2" cy="146.2" r="2.2"></circle>
+						<circle cx="170.2" cy="146.2" r="2.2"></circle>
+						<circle cx="194.2" cy="170.2" r="2.2"></circle>
+						<circle cx="2.2" cy="170.2" r="2.2"></circle>
+						<circle cx="218.2" cy="170.2" r="2.2"></circle>
+						<circle cx="26.2" cy="170.2" r="2.2"></circle>
+						<circle cx="242.2" cy="170.2" r="2.2"></circle>
+						<circle cx="50.2" cy="170.2" r="2.2"></circle>
+						<circle cx="266.2" cy="170.2" r="2.2"></circle>
+						<circle cx="74.2" cy="170.2" r="2.2"></circle>
+						<circle cx="290.2" cy="170.2" r="2.2"></circle>
+						<circle cx="98.2" cy="170.2" r="2.2"></circle>
+						<circle cx="314.2" cy="170.2" r="2.2"></circle>
+						<circle cx="122.2" cy="170.2" r="2.2"></circle>
+						<circle cx="338.2" cy="170.2" r="2.2"></circle>
+						<circle cx="146.2" cy="170.2" r="2.2"></circle>
+						<circle cx="170.2" cy="170.2" r="2.2"></circle>
+						<circle cx="194.2" cy="194.2" r="2.2"></circle>
+						<circle cx="2.2" cy="194.2" r="2.2"></circle>
+						<circle cx="218.2" cy="194.2" r="2.2"></circle>
+						<circle cx="26.2" cy="194.2" r="2.2"></circle>
+						<circle cx="242.2" cy="194.2" r="2.2"></circle>
+						<circle cx="50.2" cy="194.2" r="2.2"></circle>
+						<circle cx="266.2" cy="194.2" r="2.2"></circle>
+						<circle cx="74.2" cy="194.2" r="2.2"></circle>
+						<circle cx="290.2" cy="194.2" r="2.2"></circle>
+						<circle cx="98.2" cy="194.2" r="2.2"></circle>
+						<circle cx="314.2" cy="194.2" r="2.2"></circle>
+						<circle cx="122.2" cy="194.2" r="2.2"></circle>
+						<circle cx="338.2" cy="194.2" r="2.2"></circle>
+						<circle cx="146.2" cy="194.2" r="2.2"></circle>
+						<circle cx="170.2" cy="194.2" r="2.2"></circle>
+						<circle cx="194.2" cy="218.2" r="2.2"></circle>
+						<circle cx="2.2" cy="218.2" r="2.2"></circle>
+						<circle cx="218.2" cy="218.2" r="2.2"></circle>
+						<circle cx="26.2" cy="218.2" r="2.2"></circle>
+						<circle cx="242.2" cy="218.2" r="2.2"></circle>
+						<circle cx="50.2" cy="218.2" r="2.2"></circle>
+						<circle cx="266.2" cy="218.2" r="2.2"></circle>
+						<circle cx="74.2" cy="218.2" r="2.2"></circle>
+						<circle cx="290.2" cy="218.2" r="2.2"></circle>
+						<circle cx="98.2" cy="218.2" r="2.2"></circle>
+						<circle cx="314.2" cy="218.2" r="2.2"></circle>
+						<circle cx="122.2" cy="218.2" r="2.2"></circle>
+						<circle cx="338.2" cy="218.2" r="2.2"></circle>
+						<circle cx="146.2" cy="218.2" r="2.2"></circle>
+						<circle cx="170.2" cy="218.2" r="2.2"></circle>
+						<circle cx="194.2" cy="242.2" r="2.2"></circle>
+						<circle cx="2.2" cy="242.2" r="2.2"></circle>
+						<circle cx="218.2" cy="242.2" r="2.2"></circle>
+						<circle cx="26.2" cy="242.2" r="2.2"></circle>
+						<circle cx="242.2" cy="242.2" r="2.2"></circle>
+						<circle cx="50.2" cy="242.2" r="2.2"></circle>
+						<circle cx="266.2" cy="242.2" r="2.2"></circle>
+						<circle cx="74.2" cy="242.2" r="2.2"></circle>
+						<circle cx="290.2" cy="242.2" r="2.2"></circle>
+						<circle cx="98.2" cy="242.2" r="2.2"></circle>
+						<circle cx="314.2" cy="242.2" r="2.2"></circle>
+						<circle cx="122.2" cy="242.2" r="2.2"></circle>
+						<circle cx="338.2" cy="242.2" r="2.2"></circle>
+						<circle cx="146.2" cy="242.2" r="2.2"></circle>
+						<circle cx="170.2" cy="242.2" r="2.2"></circle>
+						<circle cx="194.2" cy="266.2" r="2.2"></circle>
+						<circle cx="2.2" cy="266.2" r="2.2"></circle>
+						<circle cx="218.2" cy="266.2" r="2.2"></circle>
+						<circle cx="26.2" cy="266.2" r="2.2"></circle>
+						<circle cx="242.2" cy="266.2" r="2.2"></circle>
+						<circle cx="50.2" cy="266.2" r="2.2"></circle>
+						<circle cx="266.2" cy="266.2" r="2.2"></circle>
+						<circle cx="74.2" cy="266.2" r="2.2"></circle>
+						<circle cx="290.2" cy="266.2" r="2.2"></circle>
+						<circle cx="98.2" cy="266.2" r="2.2"></circle>
+						<circle cx="314.2" cy="266.2" r="2.2"></circle>
+						<circle cx="122.2" cy="266.2" r="2.2"></circle>
+						<circle cx="338.2" cy="266.2" r="2.2"></circle>
+						<circle cx="146.2" cy="266.2" r="2.2"></circle>
+						<circle cx="170.2" cy="266.2" r="2.2"></circle>
+						<circle cx="194.2" cy="290.2" r="2.2"></circle>
+						<circle cx="2.2" cy="290.2" r="2.2"></circle>
+						<circle cx="218.2" cy="290.2" r="2.2"></circle>
+						<circle cx="26.2" cy="290.2" r="2.2"></circle>
+						<circle cx="242.2" cy="290.2" r="2.2"></circle>
+						<circle cx="50.2" cy="290.2" r="2.2"></circle>
+						<circle cx="266.2" cy="290.2" r="2.2"></circle>
+						<circle cx="74.2" cy="290.2" r="2.2"></circle>
+						<circle cx="290.2" cy="290.2" r="2.2"></circle>
+						<circle cx="98.2" cy="290.2" r="2.2"></circle>
+						<circle cx="314.2" cy="290.2" r="2.2"></circle>
+						<circle cx="122.2" cy="290.2" r="2.2"></circle>
+						<circle cx="338.2" cy="290.2" r="2.2"></circle>
+						<circle cx="146.2" cy="290.2" r="2.2"></circle>
+						<circle cx="170.2" cy="290.2" r="2.2"></circle>
+						<circle cx="194.2" cy="314.2" r="2.2"></circle>
+						<circle cx="2.2" cy="314.2" r="2.2"></circle>
+						<circle cx="218.2" cy="314.2" r="2.2"></circle>
+						<circle cx="26.2" cy="314.2" r="2.2"></circle>
+						<circle cx="242.2" cy="314.2" r="2.2"></circle>
+						<circle cx="50.2" cy="314.2" r="2.2"></circle>
+						<circle cx="266.2" cy="314.2" r="2.2"></circle>
+						<circle cx="74.2" cy="314.2" r="2.2"></circle>
+						<circle cx="290.2" cy="314.2" r="2.2"></circle>
+						<circle cx="98.2" cy="314.2" r="2.2"></circle>
+						<circle cx="314.2" cy="314.2" r="2.2"></circle>
+						<circle cx="122.2" cy="314.2" r="2.2"></circle>
+						<circle cx="338.2" cy="314.2" r="2.2"></circle>
+						<circle cx="146.2" cy="314.2" r="2.2"></circle>
+						<circle cx="170.2" cy="314.2" r="2.2"></circle>
+						<circle cx="194.2" cy="338.2" r="2.2"></circle>
+						<circle cx="2.2" cy="338.2" r="2.2"></circle>
+						<circle cx="218.2" cy="338.2" r="2.2"></circle>
+						<circle cx="26.2" cy="338.2" r="2.2"></circle>
+						<circle cx="242.2" cy="338.2" r="2.2"></circle>
+						<circle cx="50.2" cy="338.2" r="2.2"></circle>
+						<circle cx="266.2" cy="338.2" r="2.2"></circle>
+						<circle cx="74.2" cy="338.2" r="2.2"></circle>
+						<circle cx="290.2" cy="338.2" r="2.2"></circle>
+						<circle cx="98.2" cy="338.2" r="2.2"></circle>
+						<circle cx="314.2" cy="338.2" r="2.2"></circle>
+						<circle cx="122.2" cy="338.2" r="2.2"></circle>
+						<circle cx="338.2" cy="338.2" r="2.2"></circle>
+						<circle cx="146.2" cy="338.2" r="2.2"></circle>
+						<circle cx="170.2" cy="338.2" r="2.2"></circle>
+					</svg>
+				</figure>
+
+				<!-- Image -->
+				<img src="assets/images/pixelcut-export.jpeg" class="rounded-3 position-relative" alt="">
+
+				<!-- Client rating START -->
+				<div class="position-absolute bottom-0 start-0 z-index-1 mb-4 ms-5">
+					<div class="bg-body d-flex d-inline-block rounded-3 position-relative p-3">	
+
+						<!-- Element -->
+						<img src="assets/images/element/01.svg" class="position-absolute top-0 start-0 translate-middle w-40px" alt="">
+
+						<!-- Avatar group -->
+						<div class="me-4">
+							<h6 class="fw-light">Clientes</h6>
+							<!-- Avatar group -->
+							<ul class="avatar-group mb-0">
+								<li class="avatar avatar-sm">
+									<img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="avatar">
+								</li>
+								<li class="avatar avatar-sm">
+									<img class="avatar-img rounded-circle" src="assets/images/avatar/02.jpg" alt="avatar">
+								</li>
+								<li class="avatar avatar-sm">
+									<img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="avatar">
+								</li>
+								<li class="avatar avatar-sm">
+									<img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="avatar">
+								</li>
+								<li class="avatar avatar-sm">
+									<div class="avatar-img rounded-circle bg-primary">
+										<span class="text-white position-absolute top-50 start-50 translate-middle small">1K+</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Rating -->
+						<div>
+							<h6 class="fw-light mb-3">Rating</h6>
+							<h6 class="m-0">4.8<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+						</div>
+					</div>
+				</div>
+				<!-- Client rating END -->
+			</div>
+			<!-- Left side END -->
+
+			<!-- Right side START -->
+			<div class="col-lg-6">
+				<h2 class="mb-3 mb-lg-5">Reservado de mesas en nuestro 2do piso</h2>
+				<p class="mb-3 mb-lg-5">Vive una noche exclusiva en nuestro segundo piso. Reserva tu mesa y disfruta de un servicio personalizado y las mejores vistas del bar</p>
+
+				<!-- Features START -->
+				<div class="row g-4">
+					<!-- Item -->
+					<div class="col-sm-6">
+						<div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle"><i class="fa-solid fa-utensils"></i></div>
+						<h5 class="mt-2">Quality Food</h5>
+						<p class="mb-0">Departure defective arranging rapturous did. Conduct denied adding worthy little.</p>
+					</div>
+					<!-- Item -->
+					<div class="col-sm-6">
+						<div class="icon-lg bg-danger bg-opacity-10 text-danger rounded-circle"><i class="bi bi-stopwatch-fill"></i></div>
+						<h5 class="mt-2">Quick Services</h5>
+						<p class="mb-0">Supposing so be resolving breakfast am or perfectly. </p>
+					</div>
+					<!-- Item -->
+					<div class="col-sm-6">
+						<div class="icon-lg bg-orange bg-opacity-10 text-orange rounded-circle"><i class="bi bi-shield-fill-check"></i></div>
+						<h5 class="mt-2">High Security</h5>
+						<p class="mb-0">Arranging rapturous did believe him all had supported. </p>
+					</div>
+					<!-- Item -->
+					<div class="col-sm-6">
+						<div class="icon-lg bg-info bg-opacity-10 text-info rounded-circle"><i class="bi bi-lightning-fill"></i></div>
+						<h5 class="mt-2">24 Hours Alert</h5>
+						<p class="mb-0">Rapturous did believe him all had supported.</p>
+					</div>		
+				</div>
+				<!-- Features END -->
+
+			</div>
+			<!-- Right side END -->
+		</div>
+	</div>
+</section>
+<!-- =======================
+About END -->
+
+<!-- =======================
+About START -->
+<section>
+	<div class="container">
+		<div class="row g-4">
+			
+			<div class="col-lg-4 position-relative">
+				<h2>Exelentes servicios de coctelería</h2>
+				<p>Nuestros bartenders te sorprenderán con una amplia variedad de cócteles clásicos y de autor. Descubre tu nuevo trago favorito en BimBam.</p>
+				<img src="assets/images/cocteleria-clasica.jpg" class="rounded-3" alt="">
+				<!-- Svg decoration -->
+				<figure class="position-absolute bottom-0 end-0 me-lg-n5 mb-n3">
+					<svg class="fill-info" width="150px" height="133.5px" viewbox="0 0 150 133.5" style="enable-background:new 0 0 150 133.5;" xml:space="preserve">
+						<path d="M66.4,84.6c1,0,2,0.2,2.8,0c1.5-0.4,3.6-3.5,3.5-5.1c0-0.2-0.1-0.6-0.3-0.7c-0.8-0.4-1.6-0.8-2.4-1.2 c-0.5,0.8-2-0.1-2.2,1.3c-0.1,0.6-1.4,0.2-1,1.2C66,81.5,66.6,83,66.4,84.6 M62.3,78.2c0.3-0.4,0.6-0.8,0.7-1.3 c0.6-1.7,2-2.3,3.4-2.7c1-0.3,2-0.6,3.1-0.5c2.5,0.2,4.3,1.4,5.6,3.5c0.6,1,1.2,2,1.4,3.2c0.2,0.8,0.4,1.7,0.2,2.4 c-0.9,2.7-2.4,5-5.2,6.1c-0.8,0.3-1.6,0.5-2.4,0.8c-0.1,0-0.3,0.1-0.4,0c-2.1-1-4-2.1-5.2-4.2c-0.5-0.9-1-1.9-0.9-3 c0.2-1.3-0.4-2.7,0.4-4C62.8,78.5,62.6,78.4,62.3,78.2"></path>
+						<path d="M1.3,102.8c-0.7-0.2-1-0.4-0.8-1.2c0.1,0,0.3-0.1,0.4-0.2c1.4-1,3-1.1,4.5-1.6c0.7-0.2,1.7,0,2.3,0.4 c1.7,1.3,3.6,2.5,4.5,4.7c0.7,1.9,0.4,4.3-0.8,5.8c-0.7,0.9-1.7,1.5-2.4,2.4c-1.2-0.2-2.4,0.3-3.6-0.4c-0.5-0.3-2.9-1.6-3.4-1.9 c-1.1-0.8-1.5-2-1.9-3.2c-0.1-0.2-0.2-0.6-0.1-0.8C0.6,105.5,0.2,103.9,1.3,102.8"></path>
+						<path d="M95.6,59.7c1.7,1.6,4.4,2.5,6.7,2.4c1.1,0,1.9-0.4,2.6-1.2c0.4-0.4,0.8-0.9,1.3-1.3c-0.2-0.3-0.5-0.5-0.5-0.8 c-0.3-1.1-0.9-1.7-2.1-1.8c-0.6,0-1.1-0.4-1.6-0.6c-0.4-0.1-1-0.3-1.1-0.2c-0.5,0.8-0.8-0.4-1.4,0.1c-0.4,0.4-1,1-1.7,1.6 c-0.5-0.4-0.9-0.7-1.3-1C95.2,57.7,95.8,58.8,95.6,59.7 M108.5,61.1c0.4,0.1,0.6,0.2,0.9,0.3c-0.2,0.7-0.4,1.3-0.6,1.9 c-0.3,0-0.7,0.1-1.1,0.1c0.2,0.2,0.2,0.3,0.4,0.5c-0.7,0.9-1.5,1.5-2.8,1.5c-0.3,0-0.6,0.1-0.9,0.2c-0.9,0.3-1.7,0.3-2.5,0 c-0.3-0.1-0.8-0.3-0.9-0.2c-0.8,1-1.4-0.3-2.2-0.1c-0.3,0.1-0.6-0.8-1.3-0.8c-0.4,0-0.7-0.6-1.1-0.8c-0.5-0.3-0.6-0.9-1.3-0.8 c-0.3-1-1.3-1.5-1.9-2.4c-1.2-1.9-1.2-4.6-0.2-6.5c0.8-1.6,2.4-2.1,3.9-1c0.7,0.5,1.2,1,2,0.3c0.3,0.4,0.5,0.3,0.7-0.1 c0.3-0.5,0.8-0.5,1.3-0.4c1.7,0.3,3.3,0.8,4.7,1.8c1.2,0.9,2,2.2,3,3.3C108.4,59,109.7,60,108.5,61.1"></path>
+						<path d="M123.8,108.6c0.6-0.3,1.3-0.9,2.4-0.5c-0.1,0.1-0.2,0.3-0.4,0.5c0.4,0.1,1.1,0.1,1.1,0.3 c0.3,1.3,1.8,1.6,2.2,2.8c0.7,2,1.4,4,0.3,6.1c-0.1,0.2-0.2,0.3-0.1,0.6c0.5,0.9,0,1.6-0.8,2c-0.6,0.3-0.3,0.7,0.1,1 c-0.7,0.9-1.4,1.9-2.2,2.8h-2.3c-0.4-0.5-0.9-1-1.5-1.6c-0.5-0.5-1.1-0.8-1.5-1.4c-0.9-1.4-1.1-2.9-0.8-4.4c0.2-1.2,0.8-2.3,1.1-3.5 c0.2-0.8,0.4-1.4,1.1-1.8c0.3-0.2,0.5-0.8,0.5-1.2c0-0.6,0.4-0.8,0.7-1.2C123.9,109.1,123.8,108.9,123.8,108.6"></path>
+						<path d="M144.9,43.1c-0.1-0.1-0.2-0.2-0.3-0.3c-0.3-0.9-1.3-0.7-1.9-1c-0.3-0.1-0.9,0.4-1.4,0.7 c-0.2,0.1-0.6,0.8-0.9,1.3c-0.2,0.4-0.5,1-0.7,1.1c-0.7,0.1-0.5,0.5-0.6,0.8c0,0.3-0.2,0.5-0.3,0.7c1.5,1.5,2.8,0.9,4.3,0.2 C144.7,45.9,145,44.6,144.9,43.1 M141.1,50.4c-0.3,0.5-0.6,0.9-0.9,1.3c-0.2-0.2-0.4-0.4-0.5-0.4c-1.5,0.2-2-1.2-3-1.8 c-0.1-0.1-0.2-0.5-0.1-0.5c1-0.9-0.1-1.5-0.2-2.3c-0.2,0.1-0.3,0.3-0.5,0.4c0,0-0.1-0.1-0.1-0.1c0-0.9-0.4-1.9,0.5-2.7 c0.2-0.2,0.2-0.6,0.3-0.9c0.4-0.7,0.5-1.6,1.2-2.1c0.7-0.5,0.5-1.4,1.2-1.9c1.3-0.9,3.2-1.4,4.7-0.8c2.1,0.8,3.5,2.4,4.3,4.4 c0.6,1.6,0.9,3.4,0.6,5.1c-0.2,1-1.1,1.7-1.9,2.3c-0.2,0.2-0.8-0.1-1.4-0.2c0,0.1,0,0.5,0.2,0.7c0.2,0.3,0.3,0.7-0.1,0.8 c-0.4,0.1-0.6-0.2-0.6-0.6c0-0.1-0.2-0.2-0.4-0.3c-0.3,0.3-0.7,0.6-1.1,0.9c-0.1-0.2-0.1-0.5-0.3-0.9c-0.5,0.5-1,1-1.8,1.6 C141.2,51.6,141.2,51,141.1,50.4"></path>
+						<path d="M35.9,71.9c0.3,0.3,0.5,0.4,0.7,0.6c0.1-0.3,0.2-0.7,0.4-0.8c0.4-0.1,1-0.1,1.4,0.1c1,0.7,2,1.4,2.8,2.4 c0.7,0.9,1.2,2,1.5,3.1c0.2,0.6,0.1,1.4-0.3,2.1c-0.8,1.6-1.5,3-3.1,3.9c-0.7,0.4-1.5,0.4-2.2,0.8c-0.3,0.2-0.6,0.2-0.9,0.4 c-0.1-0.2-0.3-0.5-0.4-0.7c-0.2,0.3-0.4,0.3-0.8,0c-0.6-0.4-1.9-1.6-2.5-2c-1.8-1.4-0.7-3.2-0.7-4.9c0-0.4,0.7-0.8,1.1-1.2 c1.4,0.8,2.2,2,2.7,3.4c1.4-0.2,1.6-1.5,2.4-2.2c0.2-0.2,0.1-0.6,0.1-1.3c-0.7,0.7-1.1,1.1-1.5,1.5c-1.1-0.1-0.9-1.4-1.8-1.4 c0-0.8-0.2-1.7,0-2.5C34.8,72.8,35.4,72.4,35.9,71.9"></path>
+						<path d="M115.7,17.7c0.6-0.6,1-1,1.6-1.6h2.6c0.3-1.1-0.6-0.7-1.1-0.8c0.1-0.1,0.1-0.3,0.2-0.4c0.7-0.6-0.3-0.8-0.2-1.4 c0.4-1,1.7-1.2,2.6-1.8c0.3-0.2,0.8-0.1,1.1,0.1c1.7,0.7,2.3,2.2,3,3.7c0.4,1,0,2.1,0.8,3c-0.3,1.1-0.4,2.4-1,3.4 c-0.6,1.1-1.8,1.6-3,1.8c-0.6,0.1-1.2,0.8-1.8,0.3c-0.5-0.4-1.3-0.2-1.8-0.8c-0.3-0.5-1.1-0.5-1.3-1.3c-0.1-0.4-0.9-0.5-1.2-1.1 C115.5,19.6,115.9,18.6,115.7,17.7"></path>
+						<path d="M108.3,83.1c0.3,1,0.5,1.9,0.7,2.8c0,0.2,0.1,0.5,0,0.6c-0.9,0.9-0.1,1.6,0.2,2.3c1.6,0,1.6-0.1,2.4-1.2 c1-1.4,0.8-2.9,0.8-4.4c0-0.3-0.3-0.6-0.5-0.8c-0.5-0.4-1.2,0.2-1.7-0.4l-0.4,0.7C108.9,81.9,108.7,82.8,108.3,83.1 M106.4,84.4 c-0.3-0.5-0.5-1-0.7-1.4c0.2-1.2,1.7-0.9,2.1-1.9c0.5-1,1.8-0.5,2.6-1.5c-0.3-0.2-0.6-0.4-0.9-0.6c0-0.1,0.1-0.2,0.2-0.2 c1.4-0.3,2.4,0.5,3.4,1.3c0.8,0.7,1.3,1.7,1.9,2.5c0.3,0.5-0.2,0.9,0.3,1.2c0.5,0.3,0.6,0.7,0.5,1.2c-0.1,0.6,0.4,1.2,0.3,1.5 c-0.2,0.7-0.2,1.4-0.5,2.1c-0.4,1.3-1.1,2.4-2.1,3.3c-0.6,0.5-1.4,0.7-2.3,0.5c-2.4-0.4-2.4-0.4-3.5-1.6c-0.8-0.9-1.4-2-1.6-3.3 c-0.1-0.7-0.6-1.4,0-2.1C105.3,84.9,106.3,84.9,106.4,84.4"></path>
+						<path d="M50.4,27.8c1.9,1.1,2.3,2,1.3,3.6c-0.5,0.8,0.1,1.8-0.6,2.5c-0.1,0.1,0.2,0.7,0.3,1c0.3,0.9,0.6,1,1.7,0.8 c2-0.5,2.9-1.9,3.4-3.8c-0.7-0.2-1.5-0.4-2.2-0.6c-0.9-0.3-0.6-1.3-0.9-1.7c0.4-0.4,0.9-0.9,1.3-1.3c1.3-0.7,2.1,0.7,3.2,1 c0.9,1.4,2,2.6,1.9,4.4c-0.2,2.3-1.2,4.3-3.7,5.2c-2.1,0.8-3.8,0.5-5.6-1.2c-1.1-1-2-2-2.1-3.7C48.3,31.5,48.8,29.5,50.4,27.8"></path>
+						<path d="M47.5,113.4c-1.8,0.5-2.9-0.7-4.1-1.4c-1.1-0.7-1.3-2-1.6-3.1c-0.3-1,0.3-2,0.7-3c0.3-0.8,0.8-1.6,1.2-2.3 c-0.2-0.1-0.4-0.2-0.7-0.3c0.3-0.3,0.6-0.6,0.9-1c-0.4-0.1-0.8-0.1-1.4-0.3c0.4-0.3,0.7-0.7,0.9-0.7c0.7,0,1.4-0.2,2.2,0.2 c1.9,1.1,2.9,2.8,3.6,4.7C50.3,109,49.7,111.4,47.5,113.4"></path>
+						<path d="M70.7,123.3c-0.2,0.4-0.4,0.7-0.6,1.1c1.4,1.4,1.9,3.1,1.7,5.1c-0.1,0.5,0,0.9-0.4,1.3c-0.7,0.8-0.8,2-2,2.5 c-0.6,0.2-1.2,0.3-1.5,0.2c-1-0.5-2.2-1-2.9-2c-0.3-0.5-0.6-1.1-0.7-1.8c-0.2-2.3,0.7-4.2,1.9-6.1c0.3-0.4,0.7-0.7,1.2-1 c0.6-0.3,1-0.5,1.6,0C69.5,122.9,70.1,123,70.7,123.3"></path>
+						<path d="M146,75.4c-0.8-0.6-1.3-1.8-2.6-1.7c-0.3-0.6-0.8-1.1-0.9-1.7c-0.2-1.4,0.1-2.7,1.6-3.4 c0.2-0.1,0.3-0.3,0.5-0.5c-0.3-0.1-0.5-0.2-0.5-0.2c0.4-0.4,0.8-0.8,1.3-1.3c-0.1-0.1-0.2-0.2-0.3-0.3c0.2,0,0.4-0.1,0.6-0.1 c0.8,0.1,1.8-0.4,2.5,0.4c0.9,1.1,1.6,2.3,1.9,3.8c0.4,1.9-1.5,4.1-2.9,4.8C146.6,75.5,146.2,74.7,146,75.4"></path>
+						<path d="M90.6,100.9c0,0.6,0,0.9,0,1.1c0.2,1.4-1,1.9-1.8,2.5c-0.8,0.6-1.6-0.3-2.4-0.5c-0.7-0.2-1.3-0.9-1.9-1.4 c-1-0.9-1.4-3-0.8-4.2c0.1-0.3,0-0.8,0.7-0.8c0.4,0,0.8-0.7,1.1-1.1c0.9-1.1,1.6-1.2,2.5-0.3c0.6,0.6,1.3,1.1,1.7,2 C90.3,99.1,90.9,100,90.6,100.9"></path>
+						<path d="M67.9,53.3c0.9,1,1.9,1.8,2.4,3.2c0.6,1.7,0.3,2.6-1.2,3.6c-1.6,1.1-2.7,0.9-4.2-0.5c-0.2-0.2-0.4-0.4-0.5-0.5 c-0.2-0.7,0.3-1.6-0.5-2.1c-0.4-1.9,0.9-3.5,2.9-3.5C67.2,53.3,67.5,53.3,67.9,53.3"></path>
+						<path d="M87.3,31.9c0.4-0.3,0.6-0.5,0.8-0.7c-0.3-0.2-0.5-0.5-0.8-0.7c0.1-0.1,0.2-0.3,0.4-0.5 c-0.5-0.1-0.9-0.2-1.4-0.3c0.6-1.6,2-1.7,3.2-2.2c0.2-0.1,0.7,0.2,1,0.4c1.1,0.9,1.9,2,2.5,3.3c0.1,0.2,0.2,0.5,0.1,0.5 c-1,0.8,0.3,2.5-1,3c-0.3,0.1-0.8-0.5-1.5-0.6c0.3,0.3,0.6,0.6,0.9,1c-0.5,0.3-1,0.7-1.5,1c-0.2,0.1-0.4,0-0.6,0 c-0.1,0-0.3-0.1-0.3-0.1c0.2-1.1-1.2-0.3-1.3-1c-0.1-0.4-0.4-0.7-0.4-1.1C87.2,33.3,87.3,32.6,87.3,31.9"></path>
+						<path d="M90.3,1.3V0.3h1.9c0.9,1.4,2.2,2.8,1.8,4.9c-0.3,0-0.7,0-1.2,0.1V3.6c-0.3,0.1-0.6,0-0.7,0.1 c-0.2,0.2-0.2,0.5-0.3,0.7c-0.3,0.4-0.4,0.3-0.8-0.3c-0.2-0.4-0.6-0.7-0.9-1.1c0.4-0.2,0.7-0.3,1-0.5c-0.9-0.4-0.9-0.4-0.1-1.2 C91.1,1.3,91,1,91,0.6C90.7,0.8,90.6,1,90.3,1.3"></path>
+					</svg>
+				</figure>
+			</div>
+
+			<div class="col-lg-7 position-relative ms-auto">
+				<!-- Svg decoration -->
+				<figure class="position-absolute top-0 start-0 translate-middle mt-8 ms-n4 z-index-9 d-none d-xl-block">
+					<svg class="fill-orange" width="153.6px" height="71.4px" viewbox="0 0 153.6 71.4" style="enable-background:new 0 0 153.6 71.4;" xml:space="preserve">
+						<path d="M14.4,0.8c-2.3,0.4-4.6,0.9-6.8,1.5C6.7,2.6,5.8,2.8,4.9,3.1S3,3.7,2.3,4.2c-0.6,0.3-1.1,1-1.5,1.4C0.3,6.2,0,6.9,0,7.6 c0,0.1,0,0.2,0.1,0.3C0.2,8.1,0.6,8,0.8,7.9c0.7-0.4,1.4-0.7,2.1-1.1c0.5-0.3,1-0.6,1.6-0.7c1.1-0.2,2.1-0.6,3.1-0.9 c3.4-1,7-1.4,10.5-1.7c6.5-0.6,12.9,0,19.2,1.4c2.7,0.6,5.5,1.3,8.2,1.9c2.2,0.6,4.5,1.1,6.7,1.8c1.1,0.3,2.2,0.6,3.4,1 c1,0.3,2.2,0.6,3.2,1c0.3,0.2,0.6,0.4,0.9,0.6c0.5,0.2,1,0.3,1.4,0.5c1,0.3,1.9,0.7,2.8,1.2c1.8,0.9,3.5,2,5.1,3.3 c1.5,1.2,3,2.5,4.4,3.8c0.6,0.6,1.4,1.4,2,2.1c0.1,0.1,0.4,0.3,0.3,0.5c0,0.2-1,0.2-1.1,0.2c-0.7,0-1.4,0.1-2.1,0.2 c-2.9,0.3-5.8,0.7-8.6,1.4c-2,0.6-4,1.3-5.8,2.2c-0.9,0.5-1.8,1-2.6,1.7c-0.7,0.6-1.4,1.4-2.2,1.8c-1,0.6-1.8,1.8-2.2,3 c-0.6,1.3-0.8,2.7-0.8,4.1c-0.1,2.1,2.6,5.3,4.9,6.1c4.4,1.5,8.5,0.1,12.7-0.6c3.8-0.6,6.9-2.6,10.1-4.6c2.8-1.8,5.3-3.9,4.6-7.8 c-0.2-1.5,0.5-1.4,1.6-1.2c0.2,0,0.2,0.1,0.4,0.1c4.5,0.7,9,1,13.4,2.2c4.6,1.2,8.9,3,13,5.1c3.5,1.9,6.7,4.4,9.8,6.9 c0.9,0.6,1.8,1.4,2.6,2.1c0.8,0.6,1.8,1.2,2.5,2c0.6,0.7,1.4,1.1,2.1,1.6c0.8,0.6,1.7,1.2,2.5,1.8c0.7,0.6,1.4,1.1,2.1,1.8 c0.3,0.3,0.6,0.6,1,1c1,0.9,2.2,1.4,3.1,2.2c0.3,0.2,0.5,0.6,0.7,0.8c0.5,0.4,0.9,0.8,1.4,1.2c0.9,0.8,1.8,1.5,2.7,2.3 c0.4,0.3,0.7,0.6,1.1,1c0.2,0.2,0.7,0.5,0.7,0.8c0,0.2,0,0.2-0.2,0.2c-0.2,0.1-0.7-0.1-1-0.1c-0.2,0-0.4,0-0.6,0 c-0.6,0.1-1.1,0.1-1.7,0.2c-2.2,0.2-4.4,0.8-6.5,1.4c-0.6,0.2-1.2,0.3-1.5,0.8c-0.4,0.5-0.2,1.3,0.3,1.4c0.2,0.1,0.4,0,0.6,0 c3.8-0.6,7.6,0,11,1.4c1.6,0.6,3.2,1.4,4.6,2.5c0.3,0.2,0.6,0.4,0.9,0.6c0.7,0.4,1.4,0.9,2.1,1.3c0.3,0.2,0.6,0.4,1,0.4 c0.6-0.1,1-0.7,1.3-1.4c0.1-0.3,0.2-0.6,0.2-0.9c-0.1-0.2-0.2-0.5-0.7-0.7c-0.6-0.7-1.4-1.4-1.7-2.2c-0.4-0.9-1-1.6-1.4-2.4 c-0.9-1.7-1.4-3.7-1.6-5.6c-0.4-3,0-5.9,0.6-8.9c0.1-0.2,0.1-0.3,0-0.5c-0.1-0.1-0.2-0.2-0.3-0.2c-0.6-0.3-1.4-0.1-1.9,0.5 c-0.5,0.5-0.7,1.2-0.9,1.9c-0.4,1.4-0.6,3-0.6,4.4c0,0.6,0.2,1,0.2,1.6c-0.8-0.6-1.4-1.4-2.2-2.2c-0.6-0.6-1.2-1-1.8-1.5 c-0.8-0.7-1.7-1.5-2.5-2.2c-0.8-0.7-1.7-1.4-2.4-2.2c-0.9-1-1.9-1.8-2.9-2.6c-1.1-1-2.3-2.1-3.4-3.1c-0.6-0.6-1.2-1.2-1.9-1.6 c-0.7-0.3-1.4-0.7-2-1.3c-1.5-1.4-3.1-2.6-4.7-3.9c-3.2-2.5-6.5-4.9-10.1-6.6c-4-2-8.5-3.1-12.8-4.3c-1.4-0.4-2.7-0.7-4.1-1.1 c-2.6-0.7-5.2-1-7.8-1.3c-0.6,0-1-0.2-1.5-0.2c-1.1,0-2.2,0.2-3.4,0.1c-0.4,0-0.7-0.2-1-0.5c-0.8-0.9-1.4-1.8-2.2-2.7 c-0.2-0.4-0.5-0.8-0.7-1.1c-0.2-0.4-0.8-0.6-1.1-1c-0.6-0.7-1.3-1.4-2-2.2c-1.4-1.4-2.9-2.6-4.5-3.8c-2.2-1.6-4.5-3-6.9-4.2 c-1-0.6-2.2-1.3-3.4-1.4c-0.3-0.1-0.6-0.1-1-0.1c-0.5-0.1-1-0.2-1.4-0.4c-2.2-0.7-4.3-1.4-6.5-2c-4.3-1.2-8.7-2.2-13.2-2.9 c-0.8-0.1-1.5-0.3-2.3-0.2c-0.4,0-0.8,0.1-1.2,0c-1.1-0.2-2.3-0.3-3.4-0.4C28.9,0,26.6,0,24.3,0c-2.1,0.1-4.2,0.3-6.2,0.4 c-0.2,0-0.2,0-0.3,0C16.6,0.5,15.4,0.7,14.4,0.8z M71.3,28.3c0.7-0.1,1.4-0.4,2.2-0.4c2-0.1,4,0.1,5.9,0.4c0.3,0,0.6,0.1,0.7,0.2 c0.2,0.2,0.1,0.5,0,0.7C80,29.5,80,29.8,79.9,30c-0.2,0.6-0.7,1.2-1.2,1.7c-3,3-6.9,4.6-10.8,5.6c-3.7,1-7.6,2.2-11.6,1 c-1.1-0.4-2.5-0.5-2.8-1.8c-0.4-1.4,1-2,1.8-2.7c4-3.4,8.9-4.3,12.9-4.9C69.2,28.6,70.2,28.5,71.3,28.3z"></path>
+					</svg>
+				</figure>
+				<!-- Image -->
+				<div class="position-relative mb-5">
+					<!-- Image -->
+					<img src="assets/images/a_golpe_de_coctelera.jpg" class="rounded-3" alt="">
+					<!-- Manager -->
+					<div class="position-absolute bottom-0 start-0 ms-n3 ms-lg-n6 mb-2 z-index-1">
+						<div class="bg-mode shadow d-inline-block text-center rounded-3 position-relative p-4">
+							<span class="h3 text-primary mb-2">+ 20</span>
+							<h6 class="fw-normal">Recetas nuevas</h6>
+						</div>
+					</div>
+				</div>	
+				<!-- Features START -->
+				<div class="row g-4 g-md-5">
+					<!-- Item -->
+					<div class="col-sm-6">
+						<div class="d-flex">
+							<!-- Svg icon -->
+							<figure>
+								<svg width="50.1px" height="49.9px" viewbox="0 0 50.1 49.9" style="enable-background:new 0 0 50.1 49.9;" xml:space="preserve">
+									<path class="fill-primary" d="M49.8,41.1l-5-3.4l0.8-1.5c0.1-0.3,0.1-0.6-0.1-0.8c-0.1-0.1-1.4-1.6-4.5-3.2c1.1-2.4,2-5.1,2.7-7.9 c2-8.6,1.3-15.9,1.3-16.2c0-0.3-0.3-0.6-0.7-0.7c-5.8-0.6-10.6-2.6-13.6-4.1c-3.2-1.7-5.1-3.2-5.1-3.2c-0.3-0.2-0.7-0.2-0.9,0 c-0.1,0.1-7.5,6.1-18.7,7.3c-0.3,0-0.6,0.3-0.7,0.7c0,0.1-0.3,3.4,0,8.2c0,0.4,0.4,0.7,0.8,0.7c0.4,0,0.7-0.4,0.7-0.8 C6.5,12.7,6.6,10,6.7,8.9c5.8-0.7,10.5-2.6,13.5-4.2c2.4-1.3,4.1-2.4,4.9-3c0.8,0.6,2.4,1.7,4.9,3c3,1.5,7.7,3.5,13.5,4.2 c0.1,1.9,0.4,8.2-1.3,15.1c-0.7,3-1.7,5.8-2.9,8.3c0,0.1-0.1,0.1-0.1,0.2C39.1,32.7,39,32.8,39,33c0,0.1-0.1,0.2-0.1,0.3 c-0.1,0.2-0.2,0.3-0.2,0.5c-0.1,0.1-0.1,0.3-0.2,0.4c-0.1,0.1-0.1,0.2-0.2,0.3c-0.1,0.1-0.1,0.2-0.2,0.3c0,0.1-0.1,0.2-0.1,0.2 c-0.2,0.3-0.3,0.5-0.5,0.8c0,0,0,0,0,0.1c-0.1,0.1-0.2,0.3-0.3,0.4c0,0.1-0.1,0.1-0.1,0.2c-0.5,0.7-1,1.5-1.6,2.1c0,0,0,0,0,0 c-0.1,0.1-0.2,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.3,0.3c0,0,0,0-0.1,0.1c-0.1,0.1-0.2,0.2-0.3,0.3c0,0,0,0,0,0 c-2.6,2.8-5.7,4.9-9.3,6.4c-3.5-1.4-7.5-3.9-10.8-8.1c0,0,0,0,0,0c-0.1-0.1-0.1-0.2-0.2-0.3c-1.2-1.6-2.3-3.4-3.2-5.3 c0,0,0-0.1-0.1-0.1c-1.7-3.5-3-7.8-3.7-13c-0.1-0.4-0.4-0.7-0.8-0.6c-0.4,0.1-0.7,0.4-0.6,0.8c0.6,4.8,1.8,9.1,3.6,12.9 c-3.1,1.6-4.5,3.2-4.5,3.2c-0.2,0.2-0.2,0.6-0.1,0.8l0.8,1.5l-5,3.4C0.1,41.3,0,41.5,0,41.8s0.2,0.5,0.4,0.6l4.1,2.3v4.5 c0,0.3,0.1,0.5,0.4,0.6c0.1,0.1,0.2,0.1,0.4,0.1c0.1,0,0.3,0,0.4-0.1l8.2-4.8c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0 c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0.1-0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0-0.1,0-0.1c0,0,0,0,0,0 c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0-0.1,0-0.1c0,0,0,0,0,0c0,0,0-0.1,0-0.1c0,0,0,0,0,0c0,0,0-0.1,0-0.1c0,0,0,0,0,0 c0,0,0-0.1,0-0.1c0,0,0,0,0,0c0,0,0-0.1,0-0.1L13,42c0.6-0.3,1.3-0.6,2.1-0.9c2.7,2.8,5.9,4.9,9.6,6.4c0.1,0,0.2,0.1,0.3,0.1 c0.1,0,0.2,0,0.3-0.1c3.7-1.5,6.9-3.6,9.6-6.4c0.8,0.3,1.5,0.6,2.1,0.9l-1,2.1c0,0,0,0.1,0,0.1c0,0,0,0,0,0c0,0,0,0.1,0,0.1 c0,0,0,0,0,0c0,0,0,0.1,0,0.1c0,0,0,0,0,0c0,0,0,0.1,0,0.1c0,0,0,0,0,0c0,0,0,0.1,0,0.1c0,0,0,0,0,0c0,0,0,0,0,0.1c0,0,0,0,0,0 c0,0,0,0.1,0,0.1c0,0,0,0,0,0c0,0,0,0,0,0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0.1,0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0 c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0l8.2,4.8c0.1,0.1,0.2,0.1,0.4,0.1c0.1,0,0.3,0,0.4-0.1c0.2-0.1,0.4-0.4,0.4-0.6v-4.5l4.1-2.3 c0.2-0.1,0.4-0.4,0.4-0.6C50.1,41.5,50,41.3,49.8,41.1z M6,47.9v-3.7c0-0.3-0.1-0.5-0.4-0.6l-3.4-1.9L6,39.1L8.6,44 c0,0,0,0.1,0,0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0.1,0c0,0,0,0,0,0c0,0,0,0,0.1,0c0,0,0,0,0,0 c0,0,0,0,0.1,0c0,0,0,0,0,0c0,0,0,0,0.1,0c0,0,0,0,0,0c0,0,0,0,0,0l2.1,0.4L6,47.9z M10.9,43.2C11,43.2,11,43.2,10.9,43.2 c0.1-0.1,0.1-0.1,0.2-0.1c0,0,0.1,0,0.1-0.1c0,0,0.1-0.1,0.1-0.1c0,0,0.1,0,0.1-0.1c0,0,0.1-0.1,0.1-0.1c0,0,0,0,0.1,0 c0.1,0,0.1-0.1,0.2-0.1c0,0,0,0,0,0l0.4,0.7L10.9,43.2z M11.7,41C11.7,41,11.7,41,11.7,41C11.7,41,11.7,41,11.7,41 C11.7,41,11.7,41,11.7,41C11.7,41,11.7,41,11.7,41c-0.1,0-0.1,0.1-0.1,0.1c-0.1,0-0.1,0.1-0.2,0.1c0,0-0.1,0-0.1,0.1c0,0,0,0,0,0 c0,0,0,0,0,0c-0.1,0.1-0.2,0.1-0.3,0.2c0,0,0,0,0,0c-0.1,0-0.1,0.1-0.1,0.1c0,0,0,0,0,0c0,0,0,0,0,0c-0.6,0.4-1,0.7-1.3,1 l-2.4-4.6l-1-1.8c0.5-0.5,1.7-1.5,3.7-2.5c0.1,0.1,0.2,0.3,0.2,0.4c0,0.1,0.1,0.1,0.1,0.2c0.1,0.2,0.2,0.4,0.3,0.6 c0,0,0,0.1,0.1,0.1c0.8,1.4,1.6,2.7,2.6,3.9c0,0,0,0.1,0.1,0.1c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.1,0.1,0.1,0.1 c0.1,0.1,0.1,0.2,0.2,0.2c0.1,0.1,0.2,0.2,0.3,0.4C13.2,40.2,12.4,40.6,11.7,41z M36.1,39.9C36.1,39.9,36.1,39.9,36.1,39.9 c0.1-0.1,0.1-0.2,0.2-0.2c0,0,0.1-0.1,0.1-0.1c0.1-0.1,0.2-0.2,0.3-0.3c0,0,0,0,0,0c0.5-0.6,0.9-1.1,1.3-1.7 c0.1-0.1,0.1-0.2,0.2-0.2c0.1-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.1-0.2,0.2-0.3c0.1-0.2,0.2-0.3,0.3-0.5 c0.1-0.1,0.1-0.2,0.2-0.3c0.1-0.1,0.1-0.2,0.2-0.4c0.1-0.1,0.2-0.3,0.2-0.4c0-0.1,0.1-0.2,0.1-0.2c0.1-0.2,0.2-0.4,0.3-0.6 c0-0.1,0.1-0.1,0.1-0.2c0,0,0-0.1,0.1-0.1c2,1,3.2,2,3.7,2.5l-3.4,6.4c-0.3-0.3-0.8-0.6-1.3-1c0,0,0,0,0,0c0,0,0,0,0,0 c0,0-0.1-0.1-0.1-0.1c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.2-0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0-0.1,0-0.1-0.1c-0.1,0-0.1-0.1-0.2-0.1 c0,0-0.1,0-0.1-0.1c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0C37.8,40.6,37,40.2,36.1,39.9z M38.2,43l0.1-0.3c0,0,0,0,0,0 c0.1,0,0.1,0.1,0.2,0.1c0,0,0,0,0.1,0c0,0,0.1,0.1,0.1,0.1c0,0,0.1,0,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0,0,0.1,0,0.1,0.1 c0,0,0.1,0.1,0.1,0.1c0,0,0,0,0.1,0L38,43.4L38.2,43z M44.6,43.6c-0.2,0.1-0.4,0.4-0.4,0.6v3.7l-5.3-3.1l2.1-0.4c0,0,0,0,0,0 c0,0,0,0,0.1,0c0,0,0,0,0,0c0,0,0,0,0.1,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0 c0,0,0,0,0-0.1c0,0,0,0,0,0c0,0,0-0.1,0-0.1l2.6-4.9l3.9,2.6L44.6,43.6z"></path>
+									<path class="fill-primary" d="M40.3,11.8c0-0.3-0.3-0.6-0.7-0.7c-8.5-0.9-14.1-5.5-14.1-5.5c-0.3-0.2-0.7-0.2-0.9,0c-0.1,0-5.7,4.6-14.1,5.5 c-0.3,0-0.6,0.3-0.7,0.7c0,0.1-0.3,3.4,0.2,7.8c0.5,4.1,1.8,10,5.3,14.9c0.1,0.2,0.4,0.3,0.6,0.3c0.1,0,0.3,0,0.4-0.1 c0.3-0.2,0.4-0.7,0.2-1c-3.4-4.6-4.6-10.3-5-14.2c-0.4-3.2-0.3-5.8-0.2-7c7.3-0.9,12.3-4.3,13.8-5.4c1.5,1.1,6.6,4.5,13.8,5.4 c0.1,0.8,0.1,2.4,0,4.5c0,0.4,0.3,0.8,0.7,0.8c0.4,0,0.8-0.3,0.8-0.7C40.5,14,40.3,11.9,40.3,11.8z"></path>
+									<path class="fill-primary" d="M39.5,19.4c-0.4-0.1-0.8,0.2-0.8,0.6C37,32.9,30.4,38.3,25.1,40.5c-2.6-1.1-4.9-2.6-6.7-4.6c-0.3-0.3-0.7-0.3-1,0 c-0.3,0.3-0.3,0.7,0,1c2.1,2.2,4.6,3.9,7.5,5c0.1,0,0.2,0.1,0.3,0.1c0.1,0,0.2,0,0.3-0.1c4.7-1.9,8.4-5.2,11-9.7 c1.9-3.4,3.2-7.4,3.7-12C40.1,19.8,39.9,19.4,39.5,19.4z"></path>
+									<path class="fill-primary" d="M33.3,17.6c-1-1-2.6-1-3.6,0l-6.5,6.5l-2.4-2.4c-1-1-2.6-1-3.6,0c-1,1-1,2.6,0,3.6l4.2,4.2 c0.5,0.5,1.1,0.8,1.8,0.8c0.7,0,1.3-0.3,1.8-0.8l8.4-8.4C34.3,20.2,34.3,18.6,33.3,17.6z M32.2,20.2l-8.4,8.4 c-0.2,0.2-0.5,0.3-0.8,0.3s-0.6-0.1-0.8-0.3l-4.2-4.2c-0.4-0.4-0.4-1.1,0-1.6c0.2-0.2,0.5-0.3,0.8-0.3c0.3,0,0.6,0.1,0.8,0.3 l2.9,2.9c0.1,0.1,0.3,0.2,0.5,0.2c0.2,0,0.4-0.1,0.5-0.2l7.1-7.1c0.4-0.4,1.1-0.4,1.6,0C32.7,19,32.7,19.7,32.2,20.2z"></path>
+								</svg>
+							</figure>
+							<div class="ms-3">
+								<h5 class="mb-2">Best Rate Guarantee</h5>
+								<p class="mb-0">In no impression assistance contrasted she wishing justice hastily.</p>
+							</div>
+						</div>
+					</div>	
+					
+					<!-- Item -->
+					<div class="col-sm-6">
+						<div class="d-flex">
+							<!-- Svg icon -->
+							<figure>
+								<svg width="49.3px" height="56.1px" viewbox="0 0 49.3 56.1" style="enable-background:new 0 0 49.3 56.1;" xml:space="preserve">
+									<path class="fill-primary" d="M25.3,30.7c-0.1,0-0.2,0-0.3,0c-1.1-0.1-1.8-1-1.8-2.1c0-0.5-0.4-0.9-0.9-0.9c-0.5,0-0.9,0.4-0.9,0.9c0,1.8,1.2,3.3,2.9,3.8 v0.9c0,0.5,0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9v-0.9c2-0.4,3.3-2.2,3.1-4.2c-0.2-2-1.9-3.5-3.9-3.5c-1.2,0-2.1-0.9-2.1-2.1 s0.9-2.1,2.1-2.1c1.2,0,2.1,0.9,2.1,2.1c0,0.5,0.4,0.9,0.9,0.9c0.5,0,0.9-0.4,0.9-0.9c0-1.9-1.3-3.5-3.1-3.8v-0.8 c0-0.5-0.4-0.9-0.9-0.9s-0.9,0.4-0.9,0.9v0.9c-1.9,0.5-3.1,2.4-2.9,4.3c0.3,1.9,1.9,3.4,3.9,3.4c1.1,0,2.1,0.9,2.1,2 C27.3,29.7,26.5,30.6,25.3,30.7z"></path>
+									<path class="fill-primary" d="M11.9,25.7c0,7.4,6,13.3,13.3,13.3s13.3-6,13.3-13.3s-6-13.3-13.3-13.3C17.9,12.3,11.9,18.3,11.9,25.7z M25.2,14.2 c6.3,0,11.5,5.1,11.5,11.5s-5.1,11.5-11.5,11.5S13.8,32,13.8,25.7C13.8,19.3,18.9,14.2,25.2,14.2z"></path>
+									<path class="fill-primary" d="M43.1,41.2l-7.2,3.4c-1-1.8-2.9-3-5-3.1l-6.6-0.2c-1.1,0-2.1-0.3-3-0.8l-0.7-0.4c-3.5-1.8-7.6-1.8-11,0l0-1.5 c0-0.5-0.4-0.9-0.9-0.9l-7.3-0.2c-0.5,0-0.9,0.4-0.9,0.9L0,54.5c0,0.5,0.4,0.9,0.9,0.9l7.3,0.2h0c0.5,0,0.9-0.4,0.9-0.9l0-0.8l1.9-1 c0.7-0.4,1.6-0.5,2.4-0.3l11.3,3.2c0,0,0,0,0.1,0c0.8,0.2,1.6,0.3,2.5,0.3c1.8,0,3.5-0.4,5.1-1.1c0,0,0.1,0,0.1-0.1l16.4-10.6 c0.4-0.3,0.5-0.8,0.3-1.2C48,41,45.3,40.1,43.1,41.2z M1.9,53.6l0.4-14.1l5.4,0.1L7.3,53.7L1.9,53.6z M31.6,53.4 c-2,0.9-4.2,1.1-6.4,0.7L14,50.9c-1.3-0.4-2.6-0.2-3.8,0.4l-1,0.5l0.3-9.4c3.1-2,7-2.2,10.3-0.5l0.7,0.4c1.2,0.6,2.5,0.9,3.8,1 l6.6,0.2c1.9,0.1,3.5,1.4,3.8,3.2l-9.9-0.3c-0.5,0-0.9,0.4-0.9,0.9c0,0.5,0.4,0.9,0.9,0.9l10.9,0.3h0c0.5,0,0.9-0.4,0.9-0.9 c0-0.4,0-0.8-0.1-1.2l7.4-3.5c0,0,0,0,0,0c1-0.5,2.3-0.4,3.2,0.4L31.6,53.4z"></path>
+									<path class="fill-primary" d="M26.2,9.8V1c0-0.5-0.4-0.9-0.9-0.9c-0.5,0-0.9,0.4-0.9,0.9v8.7c0,0.5,0.4,0.9,0.9,0.9C25.7,10.7,26.2,10.3,26.2,9.8z"></path>
+									<path class="fill-primary" d="M33.1,9.8V5.6c0-0.5-0.4-0.9-0.9-0.9c-0.5,0-0.9,0.4-0.9,0.9v4.1c0,0.5,0.4,0.9,0.9,0.9C32.6,10.7,33.1,10.3,33.1,9.8z"></path>
+									<path class="fill-primary" d="M19.3,9.8V5.6c0-0.5-0.4-0.9-0.9-0.9s-0.9,0.4-0.9,0.9v4.1c0,0.5,0.4,0.9,0.9,0.9S19.3,10.3,19.3,9.8z"></path>
+								</svg>
+							</figure>
+							<div class="ms-3">
+								<h5 class="mb-2">No Booking Fee</h5>
+								<p class="mb-0">In no impression assistance contrasted she wishing justice hastily.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Item -->
+					<div class="col-sm-6">
+						<div class="d-flex">
+							<!-- Svg icon -->
+							<figure>
+								<svg width="50.5px" height="44.2px" viewbox="0 0 50.5 44.2" style="enable-background:new 0 0 50.5 44.2;" xml:space="preserve">
+									<path class="fill-primary" d="M39.2,34.7c-1,0-0.8-1.2-0.8-2c0-1,1.6-1,1.6,0C40,33.5,40.2,34.7,39.2,34.7z M28.5,29.8H4.3 C2,29.8,0,27.9,0,25.5V4.3C0,1.9,2,0,4.3,0h36c2.4,0,4.3,1.9,4.3,4.3v16.1c1.3,0.5,3,1,5.1,1.3c0.3,0.1,0.6,0.3,0.7,0.7 c0,0.1,2,15.5-10.7,21.8c-0.2,0.1-0.5,0.1-0.7,0C32,40.7,29.4,34.7,28.5,29.8z M43.6,21.6c-0.1,0-0.1,0-0.2-0.1 c-2.2-1-3.5-2.2-4.2-3.1c-1.1,1.4-3.7,3.6-9.6,4.6c-0.2,2.7-0.4,14.2,9.6,19.4c10.1-5.2,9.8-16.7,9.6-19.4 C46.7,22.8,44.9,22.2,43.6,21.6z M43,19.6v-5.7H1.6v11.6c0,1.5,1.2,2.7,2.7,2.7h23.9c-0.4-3.3-0.1-5.8-0.1-5.9 c0.1-0.4,0.3-0.6,0.7-0.7c8.5-1.3,9.6-5,9.6-5c0.2-0.8,1.3-0.8,1.5,0C40,16.7,40.5,18.2,43,19.6z M43,12.3V8.1H1.6v4.2H43z M43,6.5 V4.3c0-1.5-1.2-2.7-2.7-2.7h-36c-1.5,0-2.7,1.2-2.7,2.7v2.2H43z M10.2,19.3H5.7c-1,0-1-1.6,0-1.6h4.5 C11.3,17.7,11.3,19.3,10.2,19.3z M18,19.3h-4.6c-1,0-1-1.6,0-1.6H18C19,17.7,19,19.3,18,19.3z M18,24.4H5.7c-1,0-1-1.6,0-1.6H18 C19,22.8,19,24.4,18,24.4z M39.2,38c-2.8,0-5.1-2.3-5.1-5.1v-4.3c0-1,1.1-0.8,1.8-0.8v-2.2c0-4.3,6.6-4.3,6.6,0v2.2 c0.7,0,1.9-0.2,1.9,0.8v4.3C44.4,35.7,42.1,38,39.2,38z M37.6,27.7H41v-2.2c0-2.2-3.4-2.2-3.4,0V27.7z M35.7,29.3v3.5 c0,2,1.6,3.5,3.5,3.5c2,0,3.5-1.6,3.5-3.5v-3.5H35.7z"></path>
+								</svg>
+							</figure>
+							<div class="ms-3">
+								<h5 class="mb-2">Security Payment</h5>
+								<p class="mb-0">In no impression assistance contrasted she wishing justice hastily.</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Item -->
+					<div class="col-sm-6">
+						<div class="d-flex">
+							<!-- Svg icon -->
+							<figure>
+								<svg width="52px" height="58.3px" viewbox="0 0 52 58.3" style="enable-background:new 0 0 52 58.3;" xml:space="preserve">
+									<path class="fill-primary" d="M50.8,26.2C49.2,13.7,38.7,4.2,26.1,4l1.7-1.7c0.5-0.5,0.5-1.4,0-1.9s-1.4-0.5-1.9,0c0,0,0,0,0,0l-4.2,4.2 c-0.5,0.5-0.5,1.4,0,1.9c0,0,0,0,0,0l4.2,4.3c0.5,0.5,1.4,0.5,1.9,0c0.5-0.5,0.5-1.4,0-1.9c0,0,0,0,0,0l-2.2-2.2 c12.5,0,22.7,10.2,22.7,22.7c0,6.9-3.1,13.4-8.5,17.7c-0.6,0.5-0.7,1.3-0.2,1.9s1.3,0.7,1.9,0.2l0,0C48.4,43.6,51.9,35,50.8,26.2 L50.8,26.2z"></path>
+									<path class="fill-primary" d="M25.4,48c-0.5-0.5-1.4-0.5-1.9,0c-0.5,0.5-0.5,1.4,0,1.9c0,0,0,0,0,0l2.2,2.2C13.1,52,3,41.9,3,29.3 c0-6.9,3.1-13.4,8.5-17.7c0.6-0.5,0.7-1.3,0.2-1.9c-0.5-0.6-1.3-0.7-1.9-0.2l0,0c-6.9,5.6-10.4,14.1-9.3,23 c1.6,12.5,12.1,22,24.7,22.2l-1.7,1.7c-0.5,0.5-0.5,1.4,0,1.9c0.5,0.5,1.4,0.5,1.9,0c0,0,0,0,0,0l4.2-4.2c0.5-0.5,0.5-1.4,0-1.9 c0,0,0,0,0,0L25.4,48z"></path>
+									<path class="fill-primary" d="M26.7,28.3c-0.2-0.1-0.4-0.1-0.5-0.2c-0.2-0.1-0.4-0.2-0.6-0.2c-1.3-0.5-1.9-0.9-1.9-1.5c0-0.3,0.3-0.7,0.9-1 c0.4-0.2,1.8-0.8,3.7,0.6c0.6,0.4,1.4,0.3,1.9-0.3c0.4-0.6,0.3-1.4-0.3-1.9c0,0,0,0,0,0c-0.8-0.6-1.8-1-2.8-1.3v-1.2 c0-0.7-0.6-1.3-1.3-1.3c-0.7,0-1.3,0.6-1.3,1.3v1.3c-0.3,0.1-0.7,0.2-1,0.4c-1.4,0.7-2.3,2-2.3,3.4c0,2.6,2.5,3.5,3.7,4 c0.2,0.1,0.3,0.1,0.5,0.2c0.2,0.1,0.4,0.2,0.6,0.3c1.3,0.5,1.9,0.8,1.9,1.5c0,0.3-0.3,0.7-0.9,1c-0.4,0.2-1.8,0.8-3.7-0.6 c-0.6-0.4-1.4-0.3-1.9,0.3c-0.4,0.6-0.3,1.4,0.3,1.9c0.8,0.6,1.8,1.1,2.8,1.3v1.3c0,0.7,0.6,1.3,1.3,1.3c0.7,0,1.3-0.6,1.3-1.3V36 c0.3-0.1,0.7-0.2,1-0.4c1.4-0.7,2.3-2,2.3-3.4C30.3,29.7,28,28.8,26.7,28.3L26.7,28.3z"></path>
+									<path class="fill-primary" d="M25.7,14.7c-8.1,0-14.7,6.6-14.7,14.7S17.6,44,25.7,44s14.7-6.6,14.7-14.7l0,0C40.3,21.3,33.8,14.7,25.7,14.7L25.7,14.7z  M25.7,41.4c-6.6,0-12-5.4-12-12s5.4-12,12-12s12,5.4,12,12C37.7,36,32.3,41.4,25.7,41.4z"></path>
+								</svg>
+							</figure>
+							<div class="ms-3">
+								<h5 class="mb-2">Money Back	 Guarantee</h5>
+								<p class="mb-0">In no impression assistance contrasted she wishing justice hastily.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Features END -->
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+About END -->
+
+<!-- =======================
+Villar -->
+<section class="py-0 py-md-5">
+	<div class="container">
+		<div class="position-relative rounded-3 overflow-hidden p-3 p-sm-5" style="background-image:url(assets/images/mesa-billar-bola-colores_266732-31170.avif); background-position: center left; background-size: cover;">
+			<div class="row position-relative z-index-9">
+				<div class="col-md-7 col-xl-5 ms-auto">
+					<div class="card card-body p-sm-5">
+						<div class="d-sm-flex justify-content-between align-items-center mb-2">
+							<h6 class="text-primary mb-0">Mesa de villar</h6>
+							<!-- Rating -->
+							<ul class="list-inline small mb-0">
+								<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
+								<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
+								<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
+								<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
+								<li class="list-inline-item"><i class="fa-solid fa-star text-warning"></i></li>
+							</ul>
+						</div>
+						<!-- Title -->
+						<h5>Juega en companía de tus amigos en la mesa de villar</h5>
+						<p class="mb-3">Debido a la alta demanda solo se podrá reservar en el mismo día o al día siguiente. No esperes más, las mesas se llenan rápido.</p>
+
+						<!-- Price -->
+						
+						<div class="d-flex align-items-center">
+							<h5 class="text-success mb-0 me-1">$750</h5>
+							<span class="mb-0 me-2">/hora</span>
+							<span class="text-decoration-line-through">$1000</span>
+						</div>
+							<!-- Button -->
+							<a href="#" class="btn btn-primary-soft mb-0 mt-3">Alquilar mesa de villar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+Action box END -->
+
+<!-- =======================
+Tropipay START -->
+<section>
+	<div class="container">
+
+		<!-- Title -->
+		<div class="row mb-4">
+			<div class="col-12 text-center">
+				<h2 class="mb-0">Ventas por USD</h2>
+			</div>
+		</div>
+
+		<div class="row g-4">
+			<!-- Hotel item -->
+			<div class="col-sm-6 col-xl-3">
+				<!-- Card START -->
+				<div class="card card-img-scale overflow-hidden bg-transparent">
+					<!-- Image and overlay -->
+					<div class="card-img-scale-wrapper rounded-3">
+						<!-- Image -->
+						<img src="assets/images/category/hotel/01.jpg" class="card-img" alt="hotel image">
+						<!-- Badge -->
+						<div class="position-absolute bottom-0 start-0 p-3">
+							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link"></i>Bucanero</div>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body px-2">
+						<!-- Title -->
+						<h5 class="card-title"><a href="hotel-detail.html" class="stretched-link">Cerveza Bucanero</a></h5>
+						<!-- Price and rating -->
+						<div class="d-flex justify-content-between align-items-center">
+							<h6 class="text-success mb-0">$1.97 <small class="fw-light">/Lata</small> </h6>
+							<h6 class="mb-0">4.5<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+						</div>
+					</div>
+				</div>
+				<!-- Card END -->
+			</div>
+
+			<!-- Hotel item -->
+			<div class="col-sm-6 col-xl-3">
+				<!-- Card START -->
+				<div class="card card-img-scale overflow-hidden bg-transparent">
+					<!-- Image and overlay -->
+					<div class="card-img-scale-wrapper rounded-3">
+						<!-- Image -->
+						<img src="assets/images/category/hotel/02.jpg" class="card-img" alt="hotel image">
+						<!-- Badge -->
+						<div class="position-absolute bottom-0 start-0 p-3">
+							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link">Bucanero</div>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body px-2">
+						<!-- Title -->
+						<h5 class="card-title"><a href="hotel-detail.html" class="stretched-link">Malta Bucanero</a></h5>
+						<!-- Price and rating -->
+						<div class="d-flex justify-content-between align-items-center">
+							<h6 class="text-success mb-0">$1.90 <small class="fw-light">/Lata</small> </h6>
+							<h6 class="mb-0">4.8<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+						</div>
+					</div>
+				</div>
+				<!-- Card END -->
+			</div>
+
+			<!-- Hotel item -->
+			<div class="col-sm-6 col-xl-3">
+				<!-- Card START -->
+				<div class="card card-img-scale overflow-hidden bg-transparent">
+					<!-- Image and overlay -->
+					<div class="card-img-scale-wrapper rounded-3">
+						<!-- Image -->
+						<img src="assets/images/category/hotel/03.jpg" class="card-img" alt="hotel image">
+						<!-- Badge -->
+						<div class="position-absolute bottom-0 start-0 p-3">
+							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link">Havana Club</div>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body px-2">
+						<!-- Title -->
+						<h5 class="card-title"><a href="hotel-detail.html" class="stretched-link">Havana Club Especial</a></h5>
+						<!-- Price and rating -->
+						<div class="d-flex justify-content-between align-items-center">
+							<h6 class="text-success mb-0">$8 <small class="fw-light">/Botella</small> </h6>
+							<h6 class="mb-0">4.6<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+						</div>
+					</div>
+				</div>
+				<!-- Card END -->
+			</div>
+
+			<!-- Hotel item -->
+			<div class="col-sm-6 col-xl-3">
+				<!-- Card START -->
+				<div class="card card-img-scale overflow-hidden bg-transparent">
+					<!-- Image and overlay -->
+					<div class="card-img-scale-wrapper rounded-3">
+						<!-- Image -->
+						<img src="assets/images/category/hotel/04.jpg" class="card-img" alt="hotel image">
+						<!-- Badge -->
+						<div class="position-absolute bottom-0 start-0 p-3">
+							<div class="badge text-bg-dark fs-6 rounded-pill stretched-link">Havana Club</div>
+						</div>
+					</div>
+
+					<!-- Card body -->
+					<div class="card-body px-2">
+						<!-- Title -->
+						<h5 class="card-title"><a href="hotel-detail.html" class="stretched-link">Havana Club 7 años</a></h5>
+						<!-- Price and rating -->
+						<div class="d-flex justify-content-between align-items-center">
+							<h6 class="text-success mb-0">$12 <small class="fw-light">/Botella</small> </h6>
+							<h6 class="mb-0">4.8<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+						</div>
+					</div>
+				</div>
+				<!-- Card END -->
+			</div>
+		</div> <!-- Row END -->
+	</div>
+</section>
+<!-- =======================
+Featured Hotels END -->
+<!-- =======================
+Main Banner START -->
+<section class="position-relative">
+
+	<!-- Svg decoration -->
+	<div class="position-absolute top-50 start-0 translate-middle-y d-none d-md-block">
+		<img src="assets/images/element/decoration.svg" alt="">
+	</div>
+
+	<div class="container">
+		<!-- Content and Image START -->
+		<div class="row g-4 g-lg-5 align-items-center">
+			<!-- Content -->
+			<div class="col-lg-6 position-relative">
+				<h6 class="text-uppercase">🤩 Próximo concierto en el BimBam</h6>
+				<!-- Title -->
+				<h2 class="mb-2">Asegura tu entrada ahora!</h2>
+				<!-- Info -->
+				<p class="mb-4">Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man children rejoiced.</p>
+
+				<!-- Form START -->
+				<form class="row g-4">
+					<!-- Destination -->
+					<div class="col-12">
+						<label class="small">Destination</label>
+						<div class="form-border-bottom form-control-transparent d-flex align-items-center">
+							<div class="flex-shrink-0 me-2">
+								<!-- Icon -->
+								<i class="bi bi-geo-alt text-secondary d-block"></i>
+							</div>
+							<!-- Input field -->
+							<div class="flex-grow-1">
+								<!-- Cities -->
+								<div class="form-fs-lg">
+									<select class="form-select js-choice h5" data-search-enabled="true" aria-label=".form-select-sm">
+										<option value="">Select location</option>
+										<option>San Jacinto, USA</option>
+										<option>North Dakota, Canada</option>
+										<option>West Virginia, Paris</option>
+									</select>
+								</div>	
+							</div>
+						</div>
+					</div>
+
+					<!-- Check in -->
+					<div class="col-md-6">
+						<label class="small">Check in</label>
+						<div class="form-border-bottom form-control-transparent d-flex align-items-center">
+							<!-- Icon -->
+							<i class="bi bi-calendar text-secondary d-block me-2"></i>
+							<!-- Cities -->
+							<div class="form-fs-lg">
+								<input type="text" class="form-control flatpickr" data-date-format="d/M/Y" placeholder="Select Date">
+							</div>
+						</div>
+					</div>
+
+					<!-- Check Out -->
+					<div class="col-md-6">
+						<label class="small">Check Out</label>
+						<div class="form-border-bottom form-control-transparent d-flex align-items-center">
+							<!-- Icon -->
+							<i class="bi bi-calendar text-secondary d-block me-2"></i>
+							<!-- Cities -->
+							<div class="form-fs-lg">
+								<input type="text" class="form-control flatpickr" data-date-format="d/M/Y" placeholder="Select Date">
+							</div>	
+						</div>
+					</div>
+
+					<!-- Occupant -->
+					<div class="col-md-6">
+						<label class="small">Occupant</label>
+						<div class="form-border-bottom form-control-transparent d-flex align-items-center">
+							<!-- Icon -->
+							<i class="fa-solid fa-user-group text-secondary d-block me-2"></i>
+							<!-- Cities -->
+							<div class="form-fs-lg">
+								<div class="dropdown guest-selector me-2">
+									<input type="text" class="form-guest-selector form-control selection-result" placeholder="Select occupant" id="dropdownShare" data-bs-auto-close="outside" data-bs-toggle="dropdown">
+								
+									<!-- dropdown items -->
+									<ul class="dropdown-menu guest-selector-dropdown" aria-labelledby="dropdownShare">
+										<!-- Adult -->
+										<li class="d-flex justify-content-between">
+											<div>
+												<h6 class="mb-0">Adults</h6>
+												<small>Ages 13 or above</small>
+											</div>
+
+											<div class="hstack gap-1 align-items-center">
+												<button type="button" class="btn btn-link adult-remove p-0 mb-0"><i class="bi bi-dash-circle fs-5 fa-fw"></i></button>
+												<h6 class="guest-selector-count mb-0 adults">2</h6>
+												<button type="button" class="btn btn-link adult-add p-0 mb-0"><i class="bi bi-plus-circle fs-5 fa-fw"></i></button>
+											</div>
+										</li>
+
+										<!-- Divider -->
+										<li class="dropdown-divider"></li>
+
+										<!-- Child -->
+										<li class="d-flex justify-content-between">
+											<div>
+												<h6 class="mb-0">Child</h6>
+												<small>Ages 13 below</small>
+											</div>
+
+											<div class="hstack gap-1 align-items-center">
+												<button type="button" class="btn btn-link child-remove p-0 mb-0"><i class="bi bi-dash-circle fs-5 fa-fw"></i></button>
+												<h6 class="guest-selector-count mb-0 child">0</h6>
+												<button type="button" class="btn btn-link child-add p-0 mb-0"><i class="bi bi-plus-circle fs-5 fa-fw"></i></button>
+											</div>
+										</li>
+
+										<!-- Divider -->
+										<li class="dropdown-divider"></li>
+
+										<!-- Rooms -->
+										<li class="d-flex justify-content-between">
+											<div>
+												<h6 class="mb-0">Rooms</h6>
+												<small>Max room 8</small>
+											</div>
+
+											<div class="hstack gap-1 align-items-center">
+												<button type="button" class="btn btn-link room-remove p-0 mb-0"><i class="bi bi-dash-circle fs-5 fa-fw"></i></button>
+												<h6 class="guest-selector-count mb-0 rooms">1</h6>
+												<button type="button" class="btn btn-link room-add p-0 mb-0"><i class="bi bi-plus-circle fs-5 fa-fw"></i></button>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>	
+						</div>
+					</div>
+
+					<!-- Tour type -->
+					<div class="col-md-6">
+						<label class="small">Tour type</label>
+						<div class="form-border-bottom form-control-transparent d-flex align-items-center">
+							<div class="flex-shrink-0 me-2">
+								<!-- Icon -->
+								<i class="fa-solid fa-torii-gate text-secondary d-block"></i>
+							</div>
+							<!-- Input field -->
+							<div class="flex-grow-1">
+								<!-- Cities -->
+								<div class="form-fs-lg">
+									<select class="form-select js-choice h5" data-search-enabled="true" aria-label=".form-select-sm">
+										<option value="">Select type</option>
+										<option>Adventure</option>
+										<option>Beach</option>
+										<option>Desert</option>
+										<option>History</option>
+									</select>
+								</div>	
+							</div>
+						</div>
+					</div>
+
+					<!-- Button -->
+					<div class="col-12">
+						<button class="btn btn-primary w-100 mb-0">Reservar mesa</button>
+					</div>
+				</form>	
+				<!-- Form END -->
+			</div>
+			
+			<!-- Image -->
+			<div class="col-lg-6 position-relative">
+				<img src="assets/images/bg/09.jpg" class="rounded" alt="">
+			</div>
+		</div>
+		<!-- Content and Image END -->
+	</div>
+</section>
+<!-- =======================
+Main Banner END -->
+<!-- =======================
+Gallery START -->
+<section>
+	<div class="container-fluid">
+		<!-- Title -->
+		<div class="row mb-md-4">
+			<div class="col-12 mx-auto text-center mb-4">
+				<h2 class="mb-0">Cada día en El BimBam es inolvidable</h2>
+			</div>
+		</div>
+
+			<!-- Slider START -->
+			<div class="tiny-slider arrow-round arrow-blur arrow-hover rounded-3 overflow-hidden">
+				<div class="tiny-slider-inner d-flex align-items-end" data-autoplay="true" data-edge="2" data-arrow="true" data-dots="false" data-items="6" data-items-lg="4" data-items-sm="2">
+					<!-- Slider item -->
+					<div>
+						<a data-glightbox="" data-gallery="gallery" href="assets/images/category/hotel/gallery/01.jpg">
+							<div class="card card-element-hover card-overlay-hover overflow-hidden">
+								<!-- Image -->
+								<img src="assets/images/category/hotel/gallery/01.jpg" class="rounded-3" alt="">
+								<!-- Full screen button -->
+								<div class="hover-element w-100 h-100">
+									<i class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Slider item -->
+					<div>
+						<a data-glightbox="" data-gallery="gallery" href="assets/images/category/hotel/gallery/02.jpg">
+							<div class="card card-element-hover card-overlay-hover overflow-hidden">
+								<!-- Image -->
+								<img src="assets/images/category/hotel/gallery/02.jpg" class="rounded-3" alt="">
+								<!-- Full screen button -->
+								<div class="hover-element w-100 h-100">
+									<i class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Slider item -->
+					<div>
+						<a data-glightbox="" data-gallery="gallery" href="assets/images/category/hotel/gallery/03.jpg">
+							<div class="card card-element-hover card-overlay-hover overflow-hidden">
+								<!-- Image -->
+								<img src="assets/images/category/hotel/gallery/03.jpg" class="rounded-3" alt="">
+								<!-- Full screen button -->
+								<div class="hover-element w-100 h-100">
+									<i class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Slider item -->
+					<div>
+						<a data-glightbox="" data-gallery="gallery" href="assets/images/category/hotel/gallery/05.jpg">
+							<div class="card card-element-hover card-overlay-hover overflow-hidden">
+								<!-- Image -->
+								<img src="assets/images/category/hotel/gallery/05.jpg" class="rounded-3" alt="">
+								<!-- Full screen button -->
+								<div class="hover-element w-100 h-100">
+									<i class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Slider item -->
+					<div>
+						<a data-glightbox="" data-gallery="gallery" href="assets/images/category/hotel/gallery/08.jpg">
+							<div class="card card-element-hover card-overlay-hover overflow-hidden">
+								<!-- Image -->
+								<img src="assets/images/category/hotel/gallery/08.jpg" class="rounded-3" alt="">
+								<!-- Full screen button -->
+								<div class="hover-element w-100 h-100">
+									<i class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Slider item -->
+					<div>
+						<a data-glightbox="" data-gallery="gallery" href="https://www.youtube.com/embed/tXHviS-4ygo">
+							<div class="card card-element-hover card-overlay-hover overflow-hidden">
+								<!-- Image -->
+								<img src="assets/images/category/hotel/gallery/04.jpg" class="rounded-3" alt="">
+								<!-- Full screen button -->
+								<div class="hover-element w-100 h-100">
+									<span class="btn text-danger btn-round btn-white position-absolute top-50 start-50 translate-middle mb-0">
+										<i class="fas fa-play"></i>
+									</span>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Slider item -->
+					<div>
+						<a data-glightbox="" data-gallery="gallery" href="assets/images/category/hotel/gallery/06.jpg">
+							<div class="card card-element-hover card-overlay-hover overflow-hidden">
+								<!-- Image -->
+								<img src="assets/images/category/hotel/gallery/06.jpg" class="rounded-3" alt="">
+								<!-- Full screen button -->
+								<div class="hover-element w-100 h-100">
+									<i class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Slider item -->
+					<div>
+						<a data-glightbox="" data-gallery="gallery" href="assets/images/category/hotel/gallery/07.jpg">
+							<div class="card card-element-hover card-overlay-hover overflow-hidden">
+								<!-- Image -->
+								<img src="assets/images/category/hotel/gallery/07.jpg" class="rounded-3" alt="">
+								<!-- Full screen button -->
+								<div class="hover-element w-100 h-100">
+									<i class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>			
+		<!-- Slider END	 -->
+	</div>
+</section>
+<!-- =======================
+Gallery END -->
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+<footer class="bg-dark py-7">
+
+	<div class="container">
+		<div class="row mx-auto">
+			<div class="col-lg-6 mx-auto text-center">
+				<!-- Logo -->
+				<img class="mx-auto h-60px" src="assets/images/311521385_101019562802721_1833123397350662529_n copia.png" alt="logo">
+				<p class="mt-3 text-white">“Tenemos un compromiso firme con el pueblo de Cumanayagua y es lograr un espacio donde las personas puedar ir a liberar su mente de las preocupaciones de día a día y hacer de BimBam su zona de confort”</p>
+				<!-- Links -->
+				<ul class="nav justify-content-between text-primary-hover mt-3 mt-md-0">
+					<li class="nav-item"><a class="nav-link p-2 text-white" href="#">Sobre nosotros</a></li>
+					<li class="nav-item"><a class="nav-link p-2 text-white" href="#">Términos</a></li>
+					<li class="nav-item"><a class="nav-link p-2 text-white" href="#">Comercial</a></li>
+					<li class="nav-item"><a class="nav-link p-2 text-white" href="#">Contactanos</a></li>
+				</ul>
+				<!-- Social media button -->
+				<ul class="list-inline mt-3 mb-0">
+					<li class="list-inline-item"> 
+						<a class="btn btn-white btn-sm shadow px-2 text-facebook" href="#">
+							<i class="fab fa-fw fa-facebook-f"></i>
+						</a> 
+					</li>
+					<li class="list-inline-item"> 
+						<a class="btn btn-white btn-sm shadow px-2 text-instagram" href="#">
+							<i class="fab fa-fw fa-instagram"></i>
+						</a> 
+					</li>
+					<li class="list-inline-item"> 
+						<a class="btn btn-white btn-sm shadow px-2 text-twitter" href="#">
+							<i class="fab fa-fw fa-twitter"></i>
+						</a> 
+					</li>
+					<li class="list-inline-item"> 
+						<a class="btn btn-white btn-sm shadow px-2 text-linkedin" href="#">
+							<i class="fab fa-fw fa-linkedin-in"></i>
+						</a> 
+					</li>
+				</ul>
+				<!-- copyright text -->
+				<div class="text-body-secondary text-primary-hover mt-3"> Copyrights ©2024 El BimBam. Hecho por <a href="https://www.ledexsoft.cu/" class="text-body-secondary"> Ledexsoft</a>. </div>
+			</div>
+		</div>
+		
+	</div>
+</footer>
+<!-- =======================
+Footer END -->
+
+<!-- Back to top -->
+<div class="back-top"></div>
+
+<!-- Bootstrap JS -->
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min-2.js"></script>
+
+<!-- Vendors -->
+<script src="assets/vendor/choices/js/choices.min.js"></script>
+<script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
+<script src="assets/vendor/flatpickr/js/flatpickr.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.js"></script>
+
+<!-- ThemeFunctions -->
+<script src="assets/js/functions-2.js"></script>
+<script src="service-worker.js"></script>
+<script src="site.webmanifest"></script>
+</body>
 </html>
